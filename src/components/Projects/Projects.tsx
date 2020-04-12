@@ -6,6 +6,7 @@ import poa from '../../assets/preso-ou-nao.png';
 import loa from '../../assets/lei-ou-nao.png';
 import cfb from '../../assets/custom-fb-extension.png';
 import camara2019 from '../../assets/camara2019.png';
+import snake from '../../assets/snake.png';
 
 interface CardProps {
   image: string,
@@ -37,13 +38,22 @@ const Projects: React.FC = () => {
         <div className={styles.left}>
           <div className={styles.item}>
             <Card 
-              image={camara2019} 
+              image={snake} 
               title="Web App"
-              subtitle="Câmara 2019"
-              url="https://camara2019.yuridelgado.dev"
+              subtitle="Snake Vai a Brasília"
+              url="https://snake.yuridelgado.dev"
             />
           </div>
 
+          <div className={styles.item}>
+            <Card 
+              image={loa} 
+              title="Web App"
+              subtitle="Lei ou Não"
+              url="https://leiounao.herokuapp.com"
+            />
+          </div>
+         
           <div className={styles.item}>
             <Card 
               image={svgFilter} 
@@ -55,16 +65,15 @@ const Projects: React.FC = () => {
         </div>
 
         <div className={styles.right}>
-
           <div className={styles.item}>
             <Card 
-              image={loa} 
+              image={camara2019} 
               title="Web App"
-              subtitle="Lei ou Não"
-              url="https://leiounao.herokuapp.com"
+              subtitle="Câmara 2019"
+              url="https://camara2019.yuridelgado.dev"
             />
           </div>
-          
+
           <div className={styles.item}>
             <Card 
               image={poa} 
