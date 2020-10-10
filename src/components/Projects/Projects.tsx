@@ -38,6 +38,15 @@ const Projects: React.FC = () => {
         <div className={styles.left}>
           <div className={styles.item}>
             <Card 
+              image="https://raw.githubusercontent.com/yuricd/scholiast/master/assets/scholiast-preview.png"
+              title="Bot"
+              subtitle="Scholiast - A comment bot for Instagram"
+              url="https://github.com/yuricd/scholiast"
+            />
+          </div>
+
+          <div className={styles.item}>
+            <Card 
               image={snake} 
               title="Web App"
               subtitle="Snake Vai a Brasília"
