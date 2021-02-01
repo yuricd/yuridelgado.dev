@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 100px calc(100vh - 100px);
+}
+
+.home {
+  background: $black;
+  color: $white;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 200px;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    font-family: 'Header', sans-serif;
+
+    ul {
+      list-style: none;
+      
+      li {
+        display: inline;
+
+        a {
+          margin: 20px;
+          opacity: .8;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .bottomLine {
+    width: 40%;
+    height: 12px;
+    background: $yellow;position: absolute;
+    bottom: 0;
+  }
+}

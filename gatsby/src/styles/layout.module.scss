@@ -1,0 +1,28 @@
+@mixin wrapper {
+  margin: 0 auto;
+}
+
+.w90 {
+  @include wrapper;
+  width: 90%;
+}
+
+.w80 {
+  @include wrapper;
+  width: 80%;
+}
+
+.w70 {
+  @include wrapper;
+  width: 70%;
+}
+
+.w60 {
+  @include wrapper;
+  width: 60%;
+}
+
+.w50 {
+  @include wrapper;
+  width: 50%;
+}
