@@ -12,7 +12,6 @@
   color: $white;
   height: 100vh;
   display: grid;
-  grid-template-rows: 100px 200px;
 
   header {
     display: flex;
@@ -33,9 +32,14 @@
         display: inline;
 
         a {
-          margin: 20px;
-          opacity: .8;
+          padding: 20px;
+          opacity: .7;
           text-transform: uppercase;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+          }
         }
       }
     }
@@ -47,6 +51,21 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    .subjects {
+      font-family: 'Header', sans-serif;
+      font-weight: 400;
+      list-style: none;
+      font-size: 1.3rem;
+      margin: 48px 0 120px;
+
+      li {
+        display: inline;
+        margin-right: 24px;
+        opacity: .3;
+        text-transform: uppercase;
+      }
+    }
   }
 
   .bottomLine {

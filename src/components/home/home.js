@@ -5,6 +5,9 @@ import logoWhite from '../../assets/images/logo-white.svg'
 import styles from './home.module.scss'
 
 export default function Home() {
+
+  const subjects = ['clean code', 'open-source', 'software design', 'tdd', 'ux'] 
+
   return (
     <div className={styles.home}>
       <div className={styles.wrapper}>
@@ -41,6 +44,9 @@ export default function Home() {
             user experiences.
           </h1>
 
+          <ul className={styles.subjects}>
+            {subjects.map((s) => <li>{s}</li>)}
+          </ul>
         </main>
       </div>
       <div className={styles.bottomLine} />

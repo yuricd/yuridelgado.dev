@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 48px;
+  }
+  
+  
+  .row {
+    background: #C9C5C1;
+    height: 2px;
+    width: 100px;
+  }
+}
