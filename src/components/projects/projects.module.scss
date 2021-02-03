@@ -1,21 +1,26 @@
 @import '../../styles/variables.scss';
 
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .listProjects {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 
-  @include mobile-only {
-    flex-direction: column;
-  }
+  // @include mobile-only {
+  //   flex-direction: column;
+  // }
 }
 
 .right {
   margin-left: 5em;
 
-  @include mobile-only {
-    margin-left: 0;
-  }
+  // @include mobile-only {
+  //   margin-left: 0;
+  // }
 }
 
 .item {
@@ -33,12 +38,11 @@
   }
 
   img {
-    margin-bottom: 8px;
     transition: all .1s ease-in;
 
-    @include mobile-only {
-      max-width: 100%;
-    }
+    // @include mobile-only {
+    //   max-width: 100%;
+    // }
   }
 
   h3 {
@@ -50,12 +54,11 @@
   }
 
   i {
-    margin-left: 1em;
+    margin-left: 10px;
     font-size: .8rem;
   }
 
   p {
-    margin-top: 4px;
     font-weight: 500;
   }
 }

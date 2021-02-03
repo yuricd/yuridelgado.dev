@@ -1,40 +1,27 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import logoWhite from '../../assets/images/logo-white.svg'
+import React, { useEffect, useState } from 'react'
+import Header from '../header/header';
 
 import styles from './home.module.scss'
 
 export default function Home() {
 
-  const subjects = ['clean code', 'open-source', 'software design', 'tdd', 'ux'] 
+  const [showSecondHeader, setShowSecondHeader] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenToScroll)
+    return () => {
+      window.removeEventListener('scroll', listenToScroll)
+    }
+  }, [])
+
+  const pageHeight = window.innerHeight
+
+  const subjects = ['clean code', 'open-source', 'software design', 'tdd', 'ux']
 
   return (
     <div className={styles.home}>
       <div className={styles.wrapper}>
-        <header>
-          <div className={styles.logo}>
-            <img src={logoWhite} alt="YD" />
-          </div>
-          <nav className={styles.menu}>
-            <ul>
-              <li>
-                <Link>Home</Link>
-              </li>
-              <li>
-                <Link>About Me</Link>
-              </li>
-              <li>
-                <Link>Projects</Link>
-              </li>
-              <li>
-                <Link>Contact</Link>
-              </li>
-              <li>
-                <Link>Blog</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
 
         <main>
           <h1>
@@ -50,6 +37,21 @@ export default function Home() {
         </main>
       </div>
       <div className={styles.bottomLine} />
+      
+      {showSecondHeader && (
+        <div className={styles.secondHeader}>
+          <Header inverted={true} />
+        </div>
+      )}
+
     </div>
   )
+
+  function listenToScroll() {
+    if (window.pageYOffset > pageHeight) {
+      setShowSecondHeader(true)
+    } else {
+      setShowSecondHeader(false)
+    }
+  } 
 }
