@@ -24,82 +24,82 @@ const Card = ({ image, title, subtitle, url }) => {
   );
 }
 
-export default function Projects() {
+const Projects = () => {
   return (
     <div className={styles.projects}>
-      <div className={styles.wrapper}>
-        <Title title="Projects" lineColor="#E7E7E7" />
+      <Title>Projects</Title>
 
-        <div className={styles.listProjects}>
-          <div className={styles.left}>
-            <div className={styles.item}>
-              <Card 
-                image="https://raw.githubusercontent.com/yuricd/scholiast/master/assets/scholiast-preview.png"
-                title="Bot"
-                subtitle="Scholiast - A comment bot for Instagram"
-                url="https://github.com/yuricd/scholiast"
-              />
-            </div>
-
-            <div className={styles.item}>
-              <Card 
-                image={snake} 
-                title="Web App"
-                subtitle="Snake Vai a Brasília"
-                url="https://snake.yuridelgado.dev"
-              />
-            </div>
-
-            <div className={styles.item}>
-              <Card 
-                image={loa} 
-                title="Web App"
-                subtitle="Lei ou Não"
-                url="https://leiounao.herokuapp.com"
-              />
-            </div>
-          
-            <div className={styles.item}>
-              <Card 
-                image={svgFilter} 
-                title="NPM Package"
-                subtitle="SVG Filter Effect"
-                url="https://github.com/yuricd/svg-filter-effects"
-              />
-            </div>
+      <div className={styles.listProjects}>
+        <div className={styles.left}>
+          <div className={styles.item}>
+            <Card 
+              image="https://raw.githubusercontent.com/yuricd/scholiast/master/assets/scholiast-preview.png"
+              title="Bot"
+              subtitle="Scholiast - A comment bot for Instagram"
+              url="https://github.com/yuricd/scholiast"
+            />
           </div>
 
-          <div className={styles.right}>
-            <div className={styles.item}>
-              <Card 
-                image={camara2019} 
-                title="Web App"
-                subtitle="Câmara 2019"
-                url="https://camara2019.yuridelgado.dev"
-              />
-            </div>
-
-            <div className={styles.item}>
-              <Card 
-                image={poa} 
-                title="Web App"
-                subtitle="Preso ou Não?"
-                url="https://presoounao.herokuapp.com"
-              />
-            </div>
-
-            <div className={styles.item}>
-              <Card 
-                image={cfb} 
-                title="Chrome Extension"
-                subtitle="Custom Facebook"
-                url="https://github.com/yuricd/customize-social-network"
-              />
-            </div>
+          <div className={styles.item}>
+            <Card 
+              image={snake} 
+              title="Web App"
+              subtitle="Snake Vai a Brasília"
+              url="https://snake.yuridelgado.dev"
+            />
           </div>
 
+          <div className={styles.item}>
+            <Card 
+              image={loa} 
+              title="Web App"
+              subtitle="Lei ou Não"
+              url="https://leiounao.herokuapp.com"
+            />
+          </div>
+         
+          <div className={styles.item}>
+            <Card 
+              image={svgFilter} 
+              title="NPM Package"
+              subtitle="SVG Filter Effect"
+              url="https://github.com/yuricd/svg-filter-effects"
+            />
+          </div>
         </div>
+
+        <div className={styles.right}>
+          <div className={styles.item}>
+            <Card 
+              image={camara2019} 
+              title="Web App"
+              subtitle="Câmara 2019"
+              url="https://camara2019.yuridelgado.dev"
+            />
+          </div>
+
+          <div className={styles.item}>
+            <Card 
+              image={poa} 
+              title="Web App"
+              subtitle="Preso ou Não?"
+              url="https://presoounao.herokuapp.com"
+            />
+          </div>
+
+          <div className={styles.item}>
+            <Card 
+              image={cfb} 
+              title="Chrome Extension"
+              subtitle="Custom Facebook"
+              url="https://github.com/yuricd/customize-social-network"
+            />
+          </div>
+        </div>
+
       </div>
     </div>
   )
 };
+
+export default Projects;

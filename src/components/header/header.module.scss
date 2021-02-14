@@ -1,42 +1,27 @@
-@import '../../styles/variables.scss';
+@import '../../styles/default.scss';
 
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.topBarWrapper {
+  position: fixed;
+  width: 100%;
 
-  a {
-    color: #fff;
-    padding: 20px;
-    opacity: 0.7;
-    text-transform: uppercase;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  &.inverted {
-    a {
-      color: $black;
-    }
+  @include mobile-only {
+    z-index: 100;
+    background: #FFF;
   }
 }
 
-.menu {
+.logo {
+  animation: fadeIn ease 2s;
+}
+
+.topBar {
+  padding: 4em;
   display: flex;
-  align-items: center;
-  font-family: 'Header', sans-serif;
+  justify-content: space-between;
 
-  ul {
-    list-style: none;
-
-    li {
-      display: inline;
-
-      
-    }
+  @include mobile-only {
+    justify-content: center;
+    padding: 1em 0;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
   }
 }

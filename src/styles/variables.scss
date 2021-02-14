@@ -1,3 +1,5 @@
-$black: #0F0E0E;
-$white: #FFF;
-$yellow: #F9C615;
+$default-color: #0D0F11;
+
+@mixin mobile-only {
+  @media (max-width: 950px) { @content; }
+}

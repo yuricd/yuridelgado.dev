@@ -1,29 +1,30 @@
-import React from 'react'
-import styles from './contact.module.scss'
+import React from 'react';
 
-export default function Contact() {
+import Title from '../title/title';
+
+import styles from './contact.module.scss';
+
+const Contact = () => {
   return (
     <div className={styles.contact}>
-      <header>
-        <h1 className={styles.title}>Wanna Know Me Better?</h1>
-      </header>
-
-      <div className={styles.col12}>
-        <ul>
-          <li>
-            <a href="">GitHub</a>
-          </li>
-          <li>
-            <a href="">LinkedIn</a>
-          </li>
-          <li>
-            <a href="">Instagram</a>
-          </li>
-          <li>
-            <a href="">Telegram</a>
-          </li>
-        </ul>
-      </div>
+      <Title>Wanna know me better?</Title>
+      <ul>
+        <li>
+          <a href="https://github.com/yuricd" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/yuri-catarino-delgado/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://instagram.com/yuridelg" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </li>
+        <li>
+          <a href="https://t.me/YuriDel" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </li>
+      </ul>
+        
     </div>
   )
-}
+};
+
+export default Contact;

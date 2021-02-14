@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "gatsby": "^2.26.1",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-sass": "^3.1.0",
     "node-sass": "^5.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-router-hash-link": "^2.4.0",
     "sass": "^1.32.5"
   },
   "devDependencies": {

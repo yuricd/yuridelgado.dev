@@ -1,11 +1,15 @@
-import React from 'react'
-import styles from './title.module.scss'
+import React from 'react';
 
-export default function Title({ title, lineColor }) {
+import styles from './title.module.scss';
+
+const Title = ({ children }) => {
   return (
-    <header className={styles.header}>
-      <h1 className={styles.title}>{title}</h1>
-      <div className={styles.row} style={{ backgroundColor: lineColor ?? '#E7E7E7' }} />
-    </header>
-  )
-}
+    <div className={styles.titleWrapper}>
+      <h1 className={styles.title}>
+        <span>{children}</span>
+      </h1>
+    </div>
+  );
+};
+
+export default Title;

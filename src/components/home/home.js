@@ -1,57 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import Header from '../header/header';
+import React from 'react';
 
-import styles from './home.module.scss'
+import styles from './home.module.scss';
 
-export default function Home() {
-
-  const [showSecondHeader, setShowSecondHeader] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener('scroll', listenToScroll)
-    return () => {
-      window.removeEventListener('scroll', listenToScroll)
-    }
-  }, [])
-
-  const pageHeight = window.innerHeight
-
-  const subjects = ['clean code', 'open-source', 'software design', 'tdd', 'ux']
-
+const Home = () => {
   return (
     <div className={styles.home}>
-      <div className={styles.wrapper}>
-        <Header />
+      <h1>I’m a full-stack dev focused on <br />
+        code quality and great <br />
+        user experiences. <br /><br />
 
-        <main>
-          <h1>
-            I’m a full-stack dev focused on
-            <br />
-            code quality and great <br />
-            user experiences.
-          </h1>
-
-          <ul className={styles.subjects}>
-            {subjects.map((s) => <li>{s}</li>)}
-          </ul>
-        </main>
-      </div>
-      <div className={styles.bottomLine} />
-      
-      {showSecondHeader && (
-        <div className={styles.secondHeader}>
-          <Header inverted={true} />
-        </div>
-      )}
-
+        Currently building awesome <br /> 
+        things at <a href="http://livehere.com.br" target="_blank" rel="noopener noreferrer">LiveHere</a>.</h1>
     </div>
   )
+};
 
-  function listenToScroll() {
-    if (window.pageYOffset > pageHeight) {
-      setShowSecondHeader(true)
-    } else {
-      setShowSecondHeader(false)
-    }
-  } 
-}
+export default Home;

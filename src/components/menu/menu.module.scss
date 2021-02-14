@@ -1,0 +1,68 @@
+@import '../../styles/variables.scss';
+
+.icon {
+  display: none;
+
+  @include mobile-only {
+    cursor: pointer;
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.menu {
+  position: fixed;
+  top: 95%;
+  transform: translateY(-95%);
+
+  @include mobile-only {
+    bottom: 0;
+    top: auto;
+    transform: none;
+    width: 100%;
+    z-index: 100;
+    background: #FFF;
+    box-shadow: -5px -5px 10px 0 rgba(0,0,0,.1);
+    padding: 1em 0;
+    text-align: center;
+    height: 60px;
+    transition: all .2s ease;
+  }
+
+
+  ul {
+    text-transform: lowercase;
+    list-style: none;
+
+    li {
+
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 0 0 0 3em;
+        margin-bottom: .8em;
+        border-left: 4px solid #FFF;
+        font-weight: 300;
+
+        &.active {
+          border-color: $default-color;
+          font-weight: 400;
+        }
+
+        @include mobile-only {
+          border: none;
+          padding: 0;
+          margin-bottom: 2em;
+        }
+      }
+    }
+  }
+}
+
+.opened {
+  @include mobile-only {
+    height: 300px;
+  }
+}
