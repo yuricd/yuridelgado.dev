@@ -6,5 +6,27 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-anchor-links`],
+  siteMetadata: {
+    title: "Yuri Delgado",
+    description: "I'm a software engineering persuing ",
+  },
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-anchor-links`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/blog/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog/posts/`,
+      },
+    },
+  ],
 }
