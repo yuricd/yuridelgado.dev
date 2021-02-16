@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
+import { Link } from 'gatsby'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 import styles from './menu.module.scss'
@@ -58,6 +59,9 @@ const Menu = () => {
           >
             Let's talk
           </AnchorLink>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
         </li>
       </ul>
     </nav>

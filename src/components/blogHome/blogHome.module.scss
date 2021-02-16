@@ -1,0 +1,108 @@
+@import '../../styles/variables.scss';
+
+.blogHome {
+  background: #F5F5F5;
+  width: 100vw;
+  min-height: 100%; 
+  position: absolute;
+
+  header {
+    margin-bottom: 64px;
+  }
+
+  .title {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include mobile-only {
+      font-size: 8.7vw;
+    }
+  }
+
+  .subTitle {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+
+  @include mobile-only {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
+  width: 376px;
+  background: #FFF;
+  transition: all ease-in .2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+  }
+
+  @include mobile-only {
+    width: 80vw;
+  }
+
+  .content {
+    margin: 24px;
+
+    .category {
+      color: #84450C;
+      opacity: .7;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 16px 0;
+      font-size: .8rem;
+    }
+
+    h4 {
+      margin-bottom: 4px;
+      opacity: .9;
+    }
+
+    p {
+      font-size: .95rem;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: .8rem;
+      opacity: .6;
+      margin-top: 16px;
+
+      .readTime {
+        i {
+          display: inline-block;
+          width: 10px;
+          height: 15px;
+          // background: red;
+          margin-left: 1em;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  margin: 200px auto 100px;
+  width: 80%;
+}
+
