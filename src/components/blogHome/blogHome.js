@@ -3,6 +3,7 @@ import Header from '../header/header'
 import '../../styles/default.scss'
 import styles from './blogHome.module.scss'
 import { Link } from 'gatsby'
+import { calculateReadingTime } from '../../utils/time'
 
 const BlogHome = ({ posts }) => {
   return (
@@ -22,18 +23,22 @@ const BlogHome = ({ posts }) => {
         <div className={styles.list}>
           {posts.map((post, idx) => (
             <article className={styles.card} key={idx}>
-              <div className={styles.content}>
-                <span className={styles.category}>
-                  {post.frontmatter.category}
-                </span>
-                <h4>{post.frontmatter.title}</h4>
-                <p>{post.excerpt}</p>
+              <Link to={`/blog${post.fields.slug}`}>
+                <div className={styles.content}>
+                  <span className={styles.category}>
+                    {post.frontmatter.category}
+                  </span>
+                  <h4>{post.frontmatter.title}</h4>
+                  <p>{post.excerpt}</p>
 
-                <footer>
-                  <span className={styles.date}>{post.frontmatter.date}</span>
-                  <span className={styles.readTime}>{post.wordCount.words}min read</span>
-                </footer>
-              </div>
+                  <footer>
+                    <span className={styles.date}>{post.frontmatter.date}</span>
+                    <span className={styles.readTime}>
+                      {calculateReadingTime(post.wordCount.words)}min read
+                    </span>
+                  </footer>
+                </div>
+              </Link>
             </article>
           ))}
         </div>

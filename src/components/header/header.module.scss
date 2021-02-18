@@ -1,7 +1,7 @@
 @import '../../styles/default.scss';
 
 .topBarWrapper {
-  position: fixed;
+  position: relative;
   width: 100%;
 
   @include mobile-only {
@@ -15,7 +15,7 @@
 }
 
 .topBar {
-  padding: 4em;
+  padding: 24px 64px;
   display: flex;
   justify-content: space-between;
 

@@ -1,0 +1,64 @@
+.wrapper {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.cover {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+  img {
+    width: 100%;
+  }
+}
+
+.post {
+  position: relative;
+
+  .top {
+    margin: 80px 0 48px;
+    opacity: .5;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  .meta {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    
+    span {
+      margin-right: 24px;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 25% auto;
+    gap: 24px;
+    width: 50%;
+    margin: 64px auto;
+
+    .quotes {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    p {
+      margin-bottom: 24px;
+    }
+  }
+}
