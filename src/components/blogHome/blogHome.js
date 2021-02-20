@@ -34,7 +34,7 @@ const BlogHome = ({ posts }) => {
                   <footer>
                     <span className={styles.date}>{post.frontmatter.date}</span>
                     <span className={styles.readTime}>
-                      {calculateReadingTime(post.wordCount.words)}min read
+                      {calculateReadingTime(post.wordCount.words)} min read
                     </span>
                   </footer>
                 </div>

@@ -1,4 +1,4 @@
-$default-color: #0D0F11;
+$default-color: #1b1e22;
 
 @mixin mobile-only {
   @media (max-width: 950px) { @content; }

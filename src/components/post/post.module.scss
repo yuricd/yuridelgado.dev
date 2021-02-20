@@ -11,6 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
 
   img {
     width: 100%;
@@ -23,10 +24,24 @@
   .top {
     margin: 80px 0 48px;
     opacity: .5;
+    font-size: .9rem;
 
-    a {
+    a { 
       text-decoration: none;
+
+      &:hover {
+        svg {
+          margin-right: 12px;
+        }
+      }
+
+      svg {
+        transition: all ease .2s;
+        margin-right: 18px;
+      }
     }
+
+    
   }
 
   h1 {
@@ -38,23 +53,53 @@
     display: flex;
     flex-direction: row;
     margin-top: 12px;
+    opacity: .45;
     
     span {
       margin-right: 24px;
+    }
+
+    svg {
+      margin-right: 8px;
     }
   }
 
   .content {
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 30% auto;
     gap: 24px;
-    width: 50%;
+    width: 60%;
     margin: 64px auto;
+    color: #333;
 
     .quotes {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+      display: grid;
+      grid-template-columns: 1;
+      grid-template-rows: repeat(auto);
+      font-family: 'Source Serif Pro';
+      font-weight: normal;
+      font-style: italic;
+      font-size: 1.3rem;
+      line-height: 1.2;
+      cursor: default;
+
+      .quote {
+        margin-top: 48px;
+        display: flex;
+        
+        span {
+          opacity: .6;
+          transition: ease .2s all;
+
+          &:hover {
+            opacity: .8;
+          }
+        }
+      }
+
+      svg {
+        margin: 0 12px 0 0;
+      }
     }
 
     p {
