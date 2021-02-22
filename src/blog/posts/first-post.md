@@ -3,13 +3,16 @@ title: Awesome Blog Post Title
 author: Yuri
 date: 2020-07-15
 category: General
+image: ../images/background-sample.png
 ---
 
-Lorem **ipsum** dolor sit amet, consectetur adipiscing elit. Integer ullamcorper dolor nec quam posuere, eu aliquam ante sollicitudin. Maecenas quis egestas dolor. Duis nisi enim, hendrerit ut augue non, lobortis cursus turpis. Maecenas vulputate semper turpis, lacinia vestibulum nulla dictum vitae. Duis pulvinar odio mauris, nec lobortis nunc auctor ut. Vestibulum fringilla orci in congue hendrerit. Nam rutrum dolor id lacus lobortis ullamcorper. Vivamus sit amet mi ut nulla placerat pellentesque. Duis vehicula eleifend congue. Quisque elit ipsum, porta condimentum porta sed, auctor sit amet risus. Curabitur nec est tempus, venenatis mi id, tincidunt elit. Suspendisse vulputate eget tellus at feugiat. Proin molestie eros at sem molestie, sed rhoncus sem cursus. Nullam consequat id odio sit amet semper. Curabitur pellentesque pretium quam nec consectetur. Duis posuere leo velit, sit amet imperdiet urna fringilla eget.
+Lorem **ipsum** dolor sit amet, consectetur adipiscing elit. Integer ullamcorper dolor nec quam posuere, eu aliquam ante sollicitudin. Maecenas quis egestas dolor. Duis nisi enim, hendrerit ut augue non, lobortis cursus turpis. Maecenas vulputate semper turpis, lacinia vestibulum nulla dictum vitae. """Duis pulvinar odio mauris""", nec lobortis nunc auctor ut. Vestibulum fringilla orci in congue hendrerit. Nam rutrum dolor id lacus lobortis ullamcorper. Vivamus sit amet mi ut nulla placerat pellentesque. Duis vehicula eleifend congue. Quisque elit ipsum, porta condimentum porta sed, auctor sit amet risus. Curabitur nec est tempus, venenatis mi id, tincidunt elit. Suspendisse vulputate eget tellus at feugiat. Proin molestie eros at sem molestie, sed rhoncus sem cursus. Nullam consequat id odio sit amet semper. Curabitur pellentesque pretium quam nec consectetur. Duis posuere leo velit, sit amet imperdiet urna fringilla eget.
 
-<code>
-const a = Array
-</code>
+<code-highlight>
+const Post = ({ data }) => {
+  useEffect(() => {
+}, [])
+</code-highlight>
 
 Proin eget magna eget nisi suscipit interdum sed ac odio. Praesent tortor justo, accumsan id viverra vel, consequat vel leo. Etiam at accumsan lorem. Fusce dapibus vestibulum velit sit amet blandit. Donec at tortor a dolor dignissim viverra vitae mollis enim. In sit amet sapien sed nisi aliquet pretium in sit amet purus. Duis ullamcorper tempor urna non tristique.
 

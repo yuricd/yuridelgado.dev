@@ -4,7 +4,7 @@ export const LeftArrowIcon = ({ width = 6 }) => (
   <svg
     style={{ width }}
     xmlns="http://www.w3.org/2000/svg"
-    ariaHidden="true"
+    aria-hidden="true"
     className="svg-inline--fa fa-angle-left fa-w-8 fa-3x"
     data-icon="angle-left"
     data-prefix="fas"
@@ -20,7 +20,7 @@ export const LeftArrowIcon = ({ width = 6 }) => (
 export const UserIcon = ({ width = 12 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    ariaHidden="true"
+    aria-hidden="true"
     className="svg-inline--fa fa-user fa-w-14 fa-3x"
     data-icon="user"
     data-prefix="far"
@@ -37,7 +37,7 @@ export const UserIcon = ({ width = 12 }) => (
 export const CalendarIcon = ({ width = 12 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    ariaHidden="true"
+    aria-hidden="true"
     className="svg-inline--fa fa-calendar-alt fa-w-14 fa-3x"
     data-icon="calendar-alt"
     data-prefix="far"
@@ -54,7 +54,7 @@ export const CalendarIcon = ({ width = 12 }) => (
 export const ClockIcon = ({ width = 12 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    ariaHidden="true"
+    aria-hidden="true"
     className="svg-inline--fa fa-clock fa-w-16 fa-3x"
     data-icon="clock"
     data-prefix="far"

@@ -59,7 +59,6 @@ h1 {
 
 h2 {
   position: relative;
-  display: inline;
   font-size: 2.6vw;
 }
 
@@ -102,6 +101,10 @@ h2 {
       padding-top: 0;
     }
   }
+}
+
+.deckgo-highlight-code-carbon {
+  margin: 48px;
 }
 
 @keyframes moveUp {

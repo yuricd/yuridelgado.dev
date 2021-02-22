@@ -1,5 +1,10 @@
 @import '../../styles/variables.scss';
 
+.wrapper {
+  margin: 80px auto 100px;
+  width: 80%;
+}
+
 .blogHome {
   background: #F5F5F5;
   width: 100vw;
@@ -14,9 +19,10 @@
     display: block;
     text-transform: uppercase;
     text-align: center;
+    font-size: 3rem;
 
     @include mobile-only {
-      font-size: 8.7vw;
+      font-size: 2.5em;
     }
   }
 
@@ -105,9 +111,3 @@
     }
   }
 }
-
-.wrapper {
-  margin: 200px auto 100px;
-  width: 80%;
-}
-
