@@ -64,7 +64,7 @@ const Post = ({ data }) => {
           <div className={styles.meta}>
             <span>
               <CalendarIcon />
-              {formatDate(new Date(postDate), 'MMMM dd yyyy')}
+              {formatDate(postDate, 'MMMM dd yyyy')}
             </span>
             <span>
               <UserIcon />

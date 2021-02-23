@@ -26,7 +26,7 @@ export const pageQuery = graphql`
         excerpt(pruneLength: 80)
         frontmatter {
           author
-          date(fromNow: true)
+          date(fromNow: false)
           title
           category
         }
