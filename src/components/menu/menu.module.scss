@@ -11,7 +11,6 @@
   }
 }
 
-
 .menu {
   position: fixed;
   top: 95%;
@@ -47,7 +46,7 @@
         font-weight: 300;
 
         &.active {
-          border-color: $default-color;
+          // border-color: $default-color;
           font-weight: 400;
         }
 
@@ -63,6 +62,6 @@
 
 .opened {
   @include mobile-only {
-    height: 300px;
+    height: 360px;
   }
 }

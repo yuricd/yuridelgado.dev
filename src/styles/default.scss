@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Lato:300,400,500|Source+Serif+Pro:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Roboto:300,400,500,600display=swap');
 @import './variables.scss';
 
 * {
@@ -50,7 +50,7 @@ h3 {
 h1 {
   position: relative;
   display: inline;
-  font-size: 3.5vw;
+  font-size: 3.8rem;
 
   @include mobile-only {
     font-size: 7vw;
@@ -103,8 +103,24 @@ h2 {
   }
 }
 
+.topBar {
+  position: fixed;
+  margin-top: 12px;
+  width: 100%;
+  z-index: 100;
+
+  @include mobile-only {
+    background: #FFF;
+    margin-top: 0;
+  }
+}
+
 .deckgo-highlight-code-carbon {
-  margin: 48px;
+  margin: 48px 36px;
+
+  @include mobile-only {
+    margin: 48px 0;
+  }
 }
 
 @keyframes moveUp {

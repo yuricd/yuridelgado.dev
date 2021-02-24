@@ -20,12 +20,24 @@
   }
 }
 
+.credits {
+  display: block;
+  color: #AAA;
+  font-size: .75rem;
+  background: none;
+  text-align: right;
+  margin: 4px;
+  font-style: italic;
+}
+
 .post {
   position: relative;
+  opacity: 0;
+  right: -50px;
 
   .top {
     margin: 80px 0 36px;
-    opacity: .5;
+    opacity: .7;
     font-size: .9rem;
 
     @include mobile-only {
@@ -62,7 +74,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 12px;
-    opacity: .45;
+    opacity: .6;
     font-size: .9rem;
 
     @include mobile-only {
@@ -82,12 +94,14 @@
     max-width: 800px;
     margin: 64px auto;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
 
     @include mobile-only {
       width: 100%;
       margin:  24px 0 64px 0;
     }
+    
 
     h2 {
       font-size: 1.5rem;
@@ -126,6 +140,10 @@
 
     p {
       margin-bottom: 18px;
+
+      strong {
+        font-weight: 600;
+      }
     }
   }
 }

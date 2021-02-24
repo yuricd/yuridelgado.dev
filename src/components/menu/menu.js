@@ -3,8 +3,12 @@ import { useState } from 'react'
 
 import { Link } from 'gatsby'
 import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import { navigate } from "@reach/router"  
 
 import styles from './menu.module.scss'
+import { sleep } from '../../utils/time'
+
+import gsap from 'gsap'
 
 const Menu = () => {
   const [openedMenu, setOpenedMenu] = useState(false)
@@ -61,11 +65,19 @@ const Menu = () => {
           </AnchorLink>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link to="/blog" onClick={handleBlogClick}>Blog</Link>
         </li>
       </ul>
     </nav>
   )
+
+  async function handleBlogClick(e) {
+    const TIME = 300
+    e.preventDefault()
+    gsap.to('#personal', { x: '-200px', opacity: 0, duration: TIME/1000 })
+    await sleep(TIME);
+    navigate('/blog');
+  }
 
   function handleClick(link) {
     setOpenedMenu(!openedMenu)

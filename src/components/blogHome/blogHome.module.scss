@@ -1,12 +1,12 @@
 @import '../../styles/variables.scss';
 
 .wrapper {
-  margin: 80px auto 100px;
+  margin: 120px auto 100px;
   width: 80%;
 }
 
 .blogHome {
-  background: #F5F5F5;
+  background: #F8F8F8;
   width: 100vw;
   min-height: 100%; 
   position: absolute;
@@ -22,7 +22,7 @@
     font-size: 3rem;
 
     @include mobile-only {
-      font-size: 2.5em;
+      font-size: 2.3em;
     }
   }
 
@@ -38,8 +38,8 @@
 
 .list {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: column;
   gap: 16px;
 
   @include mobile-only {
@@ -54,13 +54,13 @@
 }
 
 .card {
-  width: 376px;
+  width: 648px;
   background: #FFF;
   transition: all ease-in .2s;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 40px rgba(0,0,0,.1);
+    box-shadow: 0 0 40px rgba(0,0,0,.05);
   }
 
   @include mobile-only {
@@ -72,23 +72,26 @@
 
     .category {
       color: #84450C;
-      opacity: .7;
+      opacity: .8;
       text-transform: uppercase;
       letter-spacing: 2px;
       display: block;
       width: 100%;
       text-align: center;
       margin: 16px 0;
-      font-size: .8rem;
+      font-size: .85rem;
     }
 
     h4 {
-      margin-bottom: 4px;
+      margin-bottom: 2px;
       opacity: .9;
+      font-size: 1.15rem;
     }
 
     p {
       font-size: .95rem;
+      font-weight: 400;
+      opacity: .7;
     }
 
     footer {
@@ -103,7 +106,6 @@
           display: inline-block;
           width: 10px;
           height: 15px;
-          // background: red;
           margin-left: 1em;
           font-size: .8rem;
         }

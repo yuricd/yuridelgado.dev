@@ -8,15 +8,18 @@ import Contact from '../components/contact/contact'
 import { Helmet } from 'react-helmet'
 import '../styles/default.scss';
 
+
 export default function Index() {
   return (
-    <>
+    <div id="personal">
       <Helmet>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
       </Helmet>
       
       <div className="globalWrapper">
-        <Header />
+        <div className="topBar">
+          <Header />
+        </div>
         
         <div className="container">
           <aside>
@@ -42,6 +45,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }

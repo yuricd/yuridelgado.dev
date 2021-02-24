@@ -8,7 +8,10 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: "Yuri Delgado",
-    description: "I'm a software engineering persuing ",
+    description: "I'm a creative software engineer",
+    titleTemplate: "%s · Yuri Delgado",
+    url: "https://yuridelgado.dev",
+    image: "/images/cover-logo.jpg",
   },
   plugins: [
     `gatsby-plugin-sass`,
