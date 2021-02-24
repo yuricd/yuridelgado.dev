@@ -12,6 +12,9 @@ export default function Index() {
   return (
     <div id="personal">
       <Helmet>
+        <meta charSet="utf-8" />
+        <title>Yuri Delgado</title>
+        <link rel="canonical" href="http://yuridelgado.dev" />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
