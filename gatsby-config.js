@@ -43,5 +43,13 @@ module.exports = {
         path: `${__dirname}/src/blog/posts/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-TB4Y46MFX9", // Google Analytics / GA
+        ],
+      },
+    },
   ],
 }
