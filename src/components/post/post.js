@@ -35,7 +35,7 @@ const renderAst = new rehypeReact({
 const Post = ({ data }) => {
 
   useEffect(() => {
-    gsap.to('#post', { duration: .5, right: 0, opacity: 1 })
+    gsap.to('#post', { duration: .5, opacity: 1 })
   }, [])
 
   const post = data.markdownRemark
