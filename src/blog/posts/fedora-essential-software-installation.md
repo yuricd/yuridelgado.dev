@@ -2,7 +2,7 @@
 title: 'Automate tasks: Fedora essential softwares installation'
 author: Yuri
 date: 2021-02-25
-category: General
+category: Development
 image: ../images/fedora-essential-softwares-installation.jpg
 credits: Photo by <a href="https://unsplash.com/@_imkiran?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sai Kiran Anagani</a> on <a href="https://unsplash.com/s/photos/linux?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
 ---
