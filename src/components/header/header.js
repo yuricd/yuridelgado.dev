@@ -9,7 +9,7 @@ const Header = ({ fillBg = false }) => {
   return (
     <header className={styles.topBarWrapper}>
       <div className={[styles.topBar, fillBg ? styles.fillBg : ''].join(' ')}>
-        <Link to="/">
+        <Link to={generateHomeLink()}>
           <div className={styles.logo}>
             <img src={logo} alt="Yuri Delgado" />
           </div>
@@ -20,6 +20,13 @@ const Header = ({ fillBg = false }) => {
       </div>
     </header>
   )
+
+  function generateHomeLink() {
+    const uri = window.location.pathname
+    return uri.includes('blog') 
+      ? '/blog'
+      : '/' 
+  }
 };
 
 export default Header;
