@@ -10,8 +10,8 @@ const Error404 = () => {
   return (
     <div
       id="error404"
-      style={{ opacity: 0 }}
       style={{
+        opacity: 0,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
