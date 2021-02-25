@@ -45,11 +45,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingIds: [
-          "G-TB4Y46MFX9", // Google Analytics / GA
-        ],
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "263446378",
       },
     },
   ],
