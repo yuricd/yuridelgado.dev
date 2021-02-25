@@ -1,6 +1,6 @@
 ---
 title: Introducing my new blog
-author: Yuri Delgado
+author: Yuri
 date: 2021-02-23
 category: General
 image: ../images/intro.jpg
