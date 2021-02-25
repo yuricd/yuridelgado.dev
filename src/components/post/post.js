@@ -14,6 +14,7 @@ import rehypeReact from 'rehype-react'
 import gsap from 'gsap'
 
 import Img from 'gatsby-image'
+import { Helmet } from 'react-helmet'
 
 deckDeckGoHighlightElement()
 
@@ -45,55 +46,61 @@ const Post = ({ data }) => {
   const postImageCredits = post.frontmatter.credits
 
   return (
-    <div className={styles.post} id="post">
-      <Header fillBg={true} />
+    <>
+      <Helmet title={`${post.frontmatter.title} - Yuri Delgado`} meta="utf-8">
+        <link rel="canonical" href={`http://yuridelgado.dev/blog/${post.fields.slug}`} />
+      </Helmet>
+    
+      <div className={styles.post} id="post">
+        <Header fillBg={true} />
 
-      {postImage && (
-        <>
-          <div className={styles.cover}>
-            <Img fluid={postImage} />
+        {postImage && (
+          <>
+            <div className={styles.cover}>
+              <Img fluid={postImage} />
+            </div>
+            <span
+              className={styles.credits}
+              dangerouslySetInnerHTML={{ __html: postImageCredits }}
+            />
+          </>
+        )}
+
+        <div className={styles.wrapper}>
+          <div className={styles.top}>
+            <Link to="/blog" onClick={handleBackClick}>
+              <LeftArrowIcon /> All posts
+            </Link>
           </div>
-          <span
-            className={styles.credits}
-            dangerouslySetInnerHTML={{ __html: postImageCredits }}
-          />
-        </>
-      )}
 
-      <div className={styles.wrapper}>
-        <div className={styles.top}>
-          <Link to="/blog" onClick={handleBackClick}>
-            <LeftArrowIcon /> All posts
-          </Link>
+          <header>
+            <h1>{post.frontmatter.title}</h1>
+
+            <div className={styles.meta}>
+              <span>
+                <CalendarIcon />
+                {formatDate(postDate, 'MMMM dd yyyy')}
+              </span>
+              <span>
+                <UserIcon />
+                <Link to="/">{post.frontmatter.author}</Link>
+              </span>
+              <span>
+                <ClockIcon />
+                {calculateReadingTime(post.wordCount.words)} min read
+              </span>
+            </div>
+          </header>
         </div>
 
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-
-          <div className={styles.meta}>
-            <span>
-              <CalendarIcon />
-              {formatDate(postDate, 'MMMM dd yyyy')}
-            </span>
-            <span>
-              <UserIcon />
-              <Link to="/">{post.frontmatter.author}</Link>
-            </span>
-            <span>
-              <ClockIcon />
-              {calculateReadingTime(post.wordCount.words)} min read
-            </span>
+        <div className={styles.wrapper}>
+          <div className={styles.content}>
+            <div className={styles.quotes}></div>
+            <div>{renderAst(post.htmlAst)}</div>
           </div>
-        </header>
-      </div>
-
-      <div className={styles.wrapper}>
-        <div className={styles.content}>
-          <div className={styles.quotes}></div>
-          <div>{renderAst(post.htmlAst)}</div>
         </div>
       </div>
-    </div>
+    </>
   )
 
   async function handleBackClick(e) {
