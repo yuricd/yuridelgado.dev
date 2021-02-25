@@ -10,7 +10,7 @@ const Home = () => {
         user experiences. <br /><br />
 
         Currently building awesome <br /> 
-        things at <a href="http://livehere.com.br" target="_blank" rel="noopener noreferrer">LiveHere</a>.</h1>
+        things at <a href="http://livehere.com.br" target="_blank" rel="noopener noreferrer">LiveHere</a> and <a href="http://izymob.com.br" target="_blank" rel="noopener noreferrer">IzyMob</a>.</h1>
     </div>
   )
 };

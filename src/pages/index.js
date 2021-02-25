@@ -7,13 +7,13 @@ import Menu from '../components/menu/menu'
 import Contact from '../components/contact/contact'
 import { Helmet } from 'react-helmet'
 import '../styles/default.scss'
+import SEO from '../components/seo'
 
 export default function Index() {
   return (
     <div id="personal">
+      <SEO title="YD" />
       <Helmet>
-        <meta charSet="utf-8" />
-        <title>Yuri Delgado</title>
         <link rel="canonical" href="http://yuridelgado.dev" />
         <link
           rel="stylesheet"

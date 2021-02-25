@@ -15,6 +15,7 @@ import gsap from 'gsap'
 
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
+import SEO from '../seo'
 
 deckDeckGoHighlightElement()
 
@@ -34,9 +35,8 @@ const renderAst = new rehypeReact({
 }).Compiler
 
 const Post = ({ data }) => {
-
   useEffect(() => {
-    gsap.to('#post', { duration: .5, opacity: 1 })
+    gsap.to('#post', { duration: 0.5, opacity: 1 })
   }, [])
 
   const post = data.markdownRemark
@@ -45,12 +45,17 @@ const Post = ({ data }) => {
     post.frontmatter.image && post.frontmatter.image.childImageSharp.fluid
   const postImageCredits = post.frontmatter.credits
 
+  console.log(postImage.src)
+
   return (
     <>
-      <Helmet title={`${post.frontmatter.title} - Yuri Delgado`} meta="utf-8">
-        <link rel="canonical" href={`http://yuridelgado.dev/blog/${post.fields.slug}`} />
-      </Helmet>
-    
+      <SEO
+        title={post.frontmatter.title}
+        article={true}
+        URI={`/blog${post.fields.slug}`}
+        description={post.excerpt}
+        image={postImage.src}
+      />
       <div className={styles.post} id="post">
         <Header fillBg={true} />
 
@@ -106,18 +111,18 @@ const Post = ({ data }) => {
   async function handleBackClick(e) {
     const TIME = 300
     e.preventDefault()
-    gsap.to('#post', { x: '50px', opacity: 0, duration: TIME/1000 })
-    await sleep(TIME);
-    navigate('/blog');
+    gsap.to('#post', { x: '50px', opacity: 0, duration: TIME / 1000 })
+    await sleep(TIME)
+    navigate('/blog')
   }
 }
-
 
 export const query = graphql`
   query BlogQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
       html
+      excerpt(pruneLength: 100)
       frontmatter {
         title
         date

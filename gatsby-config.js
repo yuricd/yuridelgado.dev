@@ -12,12 +12,12 @@ module.exports = {
     titleTemplate: "%s · Yuri Delgado",
     url: "https://yuridelgado.dev",
     image: "/images/cover-logo.jpg",
+    author: "Yuri Delgado"
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it
         trackingId: "UA-144749076-4",
         head: true,
         anonymize: true
