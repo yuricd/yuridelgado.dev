@@ -14,6 +14,15 @@ module.exports = {
     image: "/images/cover-logo.jpg",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-144749076-4",
+        head: true,
+        anonymize: true
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-anchor-links`,
     `gatsby-plugin-sharp`,
@@ -42,13 +51,6 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/src/blog/posts/`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-TB4Y46MFX9",
       },
     },
   ],
