@@ -93,7 +93,7 @@
     max-width: 800px;
     margin: 64px auto;
     color: #333;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 400;
 
     @include mobile-only {
@@ -101,10 +101,12 @@
       margin:  24px 0 64px 0;
     }
     
-
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin: 42px 0 8px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      opacity: 1;
     }
 
     .quotes {
@@ -143,6 +145,15 @@
       strong {
         font-weight: 600;
       }
+    }
+
+    ul {
+      margin-left: 24px;
+      margin-bottom: 18px;
+    }
+
+    a {
+      font-weight: 400;
     }
   }
 }

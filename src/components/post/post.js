@@ -14,7 +14,6 @@ import rehypeReact from 'rehype-react'
 import gsap from 'gsap'
 
 import Img from 'gatsby-image'
-import { Helmet } from 'react-helmet'
 import SEO from '../seo'
 
 deckDeckGoHighlightElement()
@@ -23,8 +22,13 @@ export const CodeHighlight = ({
   children,
   language = 'javascript',
   highlightLines = '',
+  showLines = 'true',
 }) => (
-  <deckgo-highlight-code language={language} highlight-lines={highlightLines}>
+  <deckgo-highlight-code
+    language={language}
+    highlight-lines={highlightLines}
+    line-numbers={!!showLines}
+  >
     <code slot="code">{children}</code>
   </deckgo-highlight-code>
 )
@@ -44,8 +48,6 @@ const Post = ({ data }) => {
   const postImage =
     post.frontmatter.image && post.frontmatter.image.childImageSharp.fluid
   const postImageCredits = post.frontmatter.credits
-
-  console.log(postImage.src)
 
   return (
     <>
