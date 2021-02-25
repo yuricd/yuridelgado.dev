@@ -13,7 +13,7 @@ I was used to spent hours in that process: get an ISO file of my favorite OS, cr
 
 I usually don’t do it so frequently, I’d say once in three years on average. But, anyway, it’s stressful especially when you do have deadlines getting closer and closer and your workstation is not ready.
 
-## Automate installation
+## Automating the installation
 In my opinion, one of the coolest things about being a developer is the capacity of automating boring stuff. And that’s cool because we can be creative and there’s a lot of different possibilities to explore.
 
 In the case of a fresh install, we can automate the softwares installation writing a simple (but very handful) script that we can run every time we make a clean install of Fedora or any other OS you like, in this case you just have to adapt the script to it.
