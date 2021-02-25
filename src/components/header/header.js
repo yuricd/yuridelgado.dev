@@ -22,8 +22,9 @@ const Header = ({ fillBg = false }) => {
   )
 
   function generateHomeLink() {
-    const uri = window.location.pathname
-    return uri.includes('blog') 
+    const isBrowser = typeof window !== 'undefined'
+    const uri = isBrowser && window.location.pathname
+    return uri && uri.includes('blog') 
       ? '/blog'
       : '/' 
   }
