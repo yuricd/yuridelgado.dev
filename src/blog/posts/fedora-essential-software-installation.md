@@ -69,7 +69,7 @@ It is still necessary to configure the recently installed softwares. For example
 There are two points that I find awesome to add to this script:
  - Check the current version of the OS - 32/64 bits. Currently everything is running for a 64-bit version.
  - Log the install errors in a grouped way to make it easier to fix in case of problems.
- - Make it easier to customize. The current set of softwares is based on my routine, but you may want to add or remove some of them. One possibility is to isolate the installing process of each software in a file and use them by demand in a main script.
+ - Make it easier to customize. The current set of softwares is based on my routine but you may want to add or remove some of them. One possibility is to isolate the installing process of each software in a file and use them on demand in a main script.
 
  I didn't have to execute this script by need yet, I'm just antecipating some major bother. So, if you identify some broken thing or want to contribute, feel free to send in the [repo](https://github.com/yuricd/fedora-essential-install). 
 
