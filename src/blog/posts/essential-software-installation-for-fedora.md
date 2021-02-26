@@ -1,5 +1,5 @@
 ---
-title: 'Automate tasks: Fedora essential softwares installation'
+title: 'Automate tasks: essential softwares installation for Fedora'
 author: Yuri
 date: 2021-02-25
 category: Development
