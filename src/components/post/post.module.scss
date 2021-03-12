@@ -93,7 +93,7 @@
     max-width: 800px;
     margin: 64px auto;
     color: #333;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: 400;
 
     @include mobile-only {
@@ -103,11 +103,19 @@
     
     h2 {
       font-size: 1.8rem;
-      margin: 42px 0 8px;
+      margin: 42px 0 16px;
       font-family: 'Roboto', sans-serif;
       font-weight: 500;
       opacity: 1;
       line-height: 1.2;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-transform: initial;
+      margin-top: 52px;
+      display: block;
     }
 
     .quotes {
@@ -141,14 +149,14 @@
     }
 
     p {
-      margin-bottom: 18px;
+      margin-bottom: 12px;
 
       strong {
         font-weight: 600;
       }
     }
 
-    ul {
+    ul, ol {
       margin-left: 24px;
       margin-bottom: 18px;
     }
@@ -156,5 +164,29 @@
     a {
       font-weight: 400;
     }
+
+    blockquote {
+      margin-bottom: 18px;
+      background: #EEE;
+      padding: 8px;
+      border-left: 7px solid #BBB;
+
+      p {
+        font-size: 1rem;
+        opacity: .7;
+        margin-bottom: 0;
+      }
+    }
+
+    p {
+      code {
+        background: #EEE;
+        padding: 3px;
+      }
+    }
   }
+}
+
+deckgo-highlight-code  {
+  --deckgo-highlight-code-white-space: pre;
 }

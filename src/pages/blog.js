@@ -17,7 +17,15 @@ const Blog = ({ data }) => {
   return (
     <div id="blog" style={{ opacity: 0 }}>
       <SEO title="Blog" URI="/blog" />
-      <Helmet>
+      <Helmet style={[{
+        "cssText": `
+          :host  {
+            code {
+              --deckgo-highlight-code-white-space: pre;
+            }
+          }
+        `
+    }]}>
         <link rel="canonical" href="http://yuridelgado.dev/blog" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
       </Helmet>
