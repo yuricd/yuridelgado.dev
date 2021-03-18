@@ -14,17 +14,32 @@ const AuthorCard = () => {
         <h3 className={styles.name}>Yuri Delgado</h3>
         <ul className={styles.socialList}>
           <li>
-            <a href="https://www.linkedin.com/in/yuri-catarino-delgado/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/yuri-catarino-delgado/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
               <LinkedinIcon width={15} />
             </a>
           </li>
           <li>
-            <a href="https://t.me/YuriDel" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://t.me/YuriDel"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Telegram"
+            >
               <TelegramIcon width={15} />
             </a>
           </li>
           <li>
-            <a href="https://yuridelgado.dev" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://yuridelgado.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Website"
+            >
               <GlobalIcon width={15} />
             </a>
           </li>
