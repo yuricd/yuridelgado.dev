@@ -18,6 +18,7 @@ I consider GIMP a little more difficult to use but in the latest releases they i
 Before starting to code, let’s think for a minute about the amount of information published to the web every hour. You probably follow some Youtubers that produce content frequently, maybe once, maybe twice a week, sometimes every day. Their videos usually require nice and attractive thumbnails to catch their audience's attention and bring views to the videos. If you have a huge channel and get a good profit from it, creating thumbnails may not be a problem because you can afford hiring someone to make this work for you. However, if you're a new kid on the block you’ll probably spend some time in this process and, we all know, time is precious. So let’s create something to save content producer’s time and make everything in a blink of an eye.
 
 ## Spoiler
+
 Those are some of the results we’re going to achieve today:
 
 ![Thumbnail 1](../images/gimp-python-generated-thumbnail-1.png) 
@@ -56,7 +57,7 @@ Now, thinking about parameters we’ll read:
 </div>
 
 ## Setting up GIMP
-If you still don’t have, download and install [GIMP](https://www.gimp.org/).
+If you still don’t have it, download and install [GIMP](https://www.gimp.org/).
 
 We are going to use a feature of GIMP called [Python-Fu](https://docs.gimp.org/en/gimp-filters-python-fu.html) that allows us to write Python code and turn it into a plug-in to manipulate elements in the screen. The main procedures in GIMP are written in a functional [Lisp dialect](https://en.wikipedia.org/wiki/Lisp_(programming_language)) called [Scheme](https://en.wikipedia.org/wiki/Scheme_(programming_language)). GIMP exposes them in an API called [Procedure Database (PDB)](https://www.gimp.org/docs/python/procedural-database.html). This API will be our confederate while we develop the plug-in.
 
@@ -215,7 +216,7 @@ def add_text(image, x, y, content, font_size, font_face, drawable=None):
 
 
 ### set\_layer\_text\_color
-Just change the text color a given layer.
+Just change the text color of a given layer.
 
 <code-highlight language="python">
 def set_layer_text_color(layer, color):
@@ -240,7 +241,7 @@ pdb.gimp_context_set_foreground(color)
 </code-highlight>
 
 ### Loading the background
-The second task is to load the background image and display it a new window.
+The second task is to load the background image and display it in a new window.
 
 <code-highlight language="python">
 img = my.load_file(background_path)
