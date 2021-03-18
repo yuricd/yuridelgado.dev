@@ -185,6 +185,25 @@
       }
     }
   }
+  
+  .seeMore {
+    a { 
+      text-decoration: none;
+      display: block;
+      padding-bottom: 4px;
+
+      &:hover {
+        svg {
+          margin-right: 12px;
+        }
+      }
+
+      svg {
+        transition: all ease .2s;
+        margin-right: 18px;
+      }
+    }
+  }
 }
 
 deckgo-highlight-code  {

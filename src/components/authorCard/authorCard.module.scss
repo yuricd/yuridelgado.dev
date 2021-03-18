@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+.authorCard {
+  font-weight: 400;
+  background: #F9F9F9;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 36px auto;
+  border: 1px solid #EEE;
+  border-top: 3px solid #{$default-color};
+  max-width: 500px;
+  
+  .summary {   
+    .name {
+      margin: 8px 0 0 0;
+      text-align: center;
+    }
+    
+    .socialList {
+      list-style: none;
+      margin: 0 0 4px;
+      display: block;
+      text-align: center;
+      
+      li {
+        display: inline;
+        margin-right: 8px;
+        opacity: .8;
+        
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    
+    p {
+      font-size: 1rem;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  
+  $size: 80px;
+  .image {
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -15,6 +15,7 @@ import gsap from 'gsap'
 
 import Img from 'gatsby-image'
 import SEO from '../seo'
+import AuthorCard from '../authorCard/authorCard'
 
 deckDeckGoHighlightElement()
 
@@ -101,10 +102,17 @@ const Post = ({ data }) => {
         </div>
 
         <div className={styles.wrapper}>
-          <div className={styles.content}>
+          <main className={styles.content}>
             <div className={styles.quotes}></div>
             <div>{renderAst(post.htmlAst)}</div>
-          </div>
+            <AuthorCard />
+            
+            <footer className={styles.seeMore}>  
+              <Link to="/blog" onClick={handleBackClick}>
+                <LeftArrowIcon /> See more posts
+              </Link>
+            </footer>
+          </main>
         </div>
       </div>
     </>
