@@ -7,7 +7,7 @@ const AuthorCard = () => {
   return (
     <div className={styles.authorCard}>
       <div className={styles.image}>
-        <img src={profilePic} alt="Author's photo" />
+        <img src={profilePic} alt="Author's" />
       </div>
 
       <div className={styles.summary}>
