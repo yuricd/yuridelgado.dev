@@ -54,7 +54,7 @@ Right, it’s an expensive mutation but it still can be done. What guarantee do 
 
 There are two concepts very closely-related to blockchain, they are decentralization and distribution. If you have one “copy” of the blockchain running in your machine, you have the power to do whatever you want. But when you have the blockchain running across a network of many peers, all of them following the same consensus (defined in the software layer), an odd one out, a rebel peer, could try to attempt against the blockchain integrity. They could mutate thousands of blocks, but at the moment those changes were sent to the network, none of those transactions would be considered valid, because they go against the consensus written in the application code.
 
-## Centralized vs Decentralized vs Distributed
+## Centralized vs. Decentralized vs. Distributed
 
 ![Network centralization levels](../images/networks-center-decenter-dist.png)<sub>Figure 3. Kinds of network centralization.</sub>
 
