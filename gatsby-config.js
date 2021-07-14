@@ -7,20 +7,20 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Yuri Delgado",
+    title: 'Yuri Delgado',
     description: "I'm a creative software engineer",
-    titleTemplate: "%s · Yuri Delgado",
-    url: "https://yuridelgado.dev",
-    image: "/images/cover-logo.jpg",
-    author: "Yuri Delgado"
+    titleTemplate: '%s · Yuri Delgado',
+    url: 'https://yuridelgado.dev',
+    image: '/images/cover-logo.jpg',
+    author: 'Yuri Delgado',
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-144749076-4",
+        trackingId: 'UA-144749076-4',
         head: true,
-        anonymize: true
+        anonymize: true,
       },
     },
     `gatsby-plugin-sass`,
@@ -45,20 +45,20 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-external-links",
+            resolve: 'gatsby-remark-external-links',
             options: {
-              target: "_blank",
-              rel: "nofollow noreferrer noopener"
-            }
+              target: '_blank',
+              rel: 'nofollow noreferrer noopener',
+            },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 500,
+              maxWidth: 600,
             },
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -74,6 +74,5 @@ module.exports = {
         path: `${__dirname}/src/blog/posts/`,
       },
     },
-    
   ],
 }
