@@ -1,5 +1,5 @@
 ---
-title: Introduction to Blockchain
+title: Introduction to blockchain
 author: Yuri
 date: 2021-07-13
 category: Blockchain
