@@ -218,11 +218,12 @@ It’s pretty straightforward, isn’t it?
 ### Mining blocks
 We are almost there.
 Now, it’s time to mine the blocks. The steps are the following: 
-Check if there’s at least one unconfirmed transaction in the network. There’s no point in mining nothing, we need transactions to mine.
-Assemble the block that will be added to the chain with all the attributes needed.
-Prove you have worked hard and get the proof hash.
-Add the block to the chain.
-Clear the list of unconfirmed transactions.
+
+1. Check if there’s at least one unconfirmed transaction in the network. There’s no point in mining nothing, we need transactions to mine.
+2. Assemble the block that will be added to the chain with all the attributes needed.
+3. Prove you have worked hard and get the proof hash.
+4. Add the block to the chain.
+5. Clear the list of unconfirmed transactions.
 
 Read the steps again and take some minutes if you judge necessary.
 
@@ -411,8 +412,6 @@ if __name__ == '__main__': unittest.main()
  
 </code-highlight>
  
-The complete code of this post is available at [GitHub](https://github.com/yuricd/blockchain-concepts). 
-
 ### Increase the difficulty
 We define the difficulty as 3 to run our code. Try to increment this value to 4 and 5, and re-run the tests. You will notice that the execution time will be significantly higher.
 
