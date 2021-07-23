@@ -332,7 +332,6 @@ class TestBlockchain(unittest.TestCase):
         blockchain = Blockchain()
         block = deepcopy(sample_block)
         proof_hash = blockchain.pow(block, difficulty=DIFFICULTY)
-
         self.assertEqual(blockchain.is_valid_proof(block, proof_hash, DIFFICULTY), True,
                          'Should apply PoW algorithm successfully')
  
