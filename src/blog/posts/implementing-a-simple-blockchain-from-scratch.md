@@ -10,7 +10,7 @@ credits: Photo by <a href="https://unsplash.com/@flyd2069?utm_source=unsplash&ut
 
 In the previous post we discussed some concepts in regard to blockchain. If you missed [this post](https://yuridelgado.dev/blog/introduction-to-blockchain/), I strongly suggest you to go back and take a read before moving forward.
 
-I opt to use Python as the language for this post due to its simplicity, but the same code can be written in C++, Java or any other language you prefer.
+I opted to use Python as the language for this post due to its simplicity, but the same code can be written in C++, Java or any other language you prefer.
 
 ## Defining entities
 
@@ -43,7 +43,7 @@ Keep in mind that the code we are writing today would be run by N peers all over
 
 Figure 1 shows a general view of both classes. I didn’t specify any type or arguments just because it’s a sketch and I wanted to save some time and space. :)
 
-## Setting up the the project
+## Setting up the project
 
 In this project we are going to use five Python libraries: `json`, `hashlib`, `time`, `unittest` and `copy`. None of them require installation, they are natively available in Python 3.7 (the version I’m using in this post).
 
@@ -184,7 +184,7 @@ Last but not least, there’s the `mine`, the method that will gather everything
 
 ### PoW method
 Finally we reached the most interesting part, at least in my opinion. 
-The `nonce` value is zero by default. Our goal here is to find a `nonce` such that when the block is hashed, the hash will have #`difficulty` leading zeros. Let’s take a look at a real world example.
+The `nonce` value is zero by default. Our goal here is to find a `nonce` such that when the block is hashed, the hash will have `difficulty` leading zeros. Let’s take a look at a real world example.
 
 That’s the hash of the block [692076](https://blockstream.info/block/00000000000000000012fbdbb03b7adbe08b7450a7b9286d075af8ee98c8142c?expand) of Bitcoin’s blockchain:
 `00000000000000000012fbdbb03b7adbe08b7450a7b9286d075af8ee98c8142c`  
