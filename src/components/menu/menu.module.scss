@@ -40,8 +40,8 @@
       a {
         text-decoration: none;
         display: block;
-        padding: 0 0 0 3em;
-        margin-bottom: .8em;
+        margin: 0 0 .8em 36px;
+        padding: 4px 12px;
         border-left: 4px solid #FFF;
         font-weight: 300;
 
@@ -49,10 +49,16 @@
           // border-color: $default-color;
           font-weight: 400;
         }
+        
+        &.cta {
+          background: #212121;
+          color: #FFF;
+          font-weight: bold;
+        }
 
         @include mobile-only {
           border: none;
-          padding: 0;
+          margin-left: 0;
           margin-bottom: 2em;
         }
       }

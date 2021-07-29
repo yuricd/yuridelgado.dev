@@ -65,7 +65,7 @@ const Menu = () => {
           </AnchorLink>
         </li>
         <li>
-          <Link to="/blog" onClick={handleBlogClick}>Blog</Link>
+          <Link to="/blog" onClick={handleBlogClick} className={styles.cta}>my blog</Link>
         </li>
       </ul>
     </nav>
