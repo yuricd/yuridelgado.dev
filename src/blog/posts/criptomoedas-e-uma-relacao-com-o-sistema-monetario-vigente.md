@@ -69,7 +69,8 @@ Conceitos introduzidos, vamos retomar ao assunto inicial.
 
 Existem algumas propriedades que são desejáveis em uma moeda.
 
-Escassez
+#### Escassez
+
 Uma moeda só será útil como meio de troca se houver uma quantidade limitada dela. O ouro e a prata são metais pouco abundantes, e o custo e tempo para mineração são elevados. A dificuldade para produção da moeda é essencial para que não haja inflação a curto ou médio prazo.
 
 Existem muitos algoritmos para criação de unidades de criptomoedas, algumas são deflacionárias e outras não. O Bitcoin, por exemplo, possui uma quantidade limitada matematicamente a 21 milhões. A Monero, a 18,9 milhões de moedas. Já a Nano é uma moeda deflacionária, pois a totalidade de suas moedas foram emitidas na data de sua criação.
@@ -78,12 +79,14 @@ Moedas fiduciárias são emitidas, via de regra, por um banco central, uma entid
 
 O sal também já foi utilizado como moeda em uma época em que a produção dele não era tão simples. Consegue imaginar o quanto de sal teríamos que utilizar hoje para comprar alguns itens no mercado? Imagine carregar quilos e quilos de sal por aí. Isso nos leva à próxima propriedade.
 
-Portabilidade
+#### Portabilidade
+
 Uma moeda deve ser, idealmente, um item de fácil transporte e porte. Carregar porcos, galinhas, pedaços de madeira e tecidos para todo lugar não é cômodo nem prático. Mas carregar moedas de ouro ou cédulas, por exemplo, é mais prático. Porém, imagine quantos quilogramas de ouro e prata seriam necessários carregar para comprar uma casa. Ou, caso necessite pagar utilizando papel-moeda, quantas maletas de cédula precisaria.
 
 Criptomoedas, por outro lado, permitem o transporte de milhares ou milhões de moedas em uma mesma carteira, podendo estar em um celular, laptop, carteira física ou até um pedaço de papel.
 
-Divisibilidade
+#### Divisibilidade
+
 Uma moeda ideal deve ser capaz de se dividir em frações, para que seja possível transacionar pequenos e grandes valores sem dificuldade (nesse caso me refiro a valor enquanto preço, e não ao que tratamos anteriormente).
 
 No caso de papel-moeda temos várias cédulas e moedas para uma grande quantidade de valores que conseguem atender às necessidades do nosso dia a dia. Porém, se buscarmos valores específicos, como R$ 0,99 (que é bem comum), não temos mais como obtê-lo, nem mesmo pela combinação de outras cédulas e moedas.
@@ -92,12 +95,14 @@ Já o ouro tem sua divisibilidade comprometida, pois seria necessário fundi-lo 
 
 No mundo das criptomoedas, alcançar a divisibilidade é simples. Você pode transacionar, por exemplo, frações de bitcoin, como 0,015, ou 15mBTC.
 
-Durabilidade
+#### Durabilidade
+
 A ação do tempo prejudica muitos itens físicos. Cédulas podem rasgar, metais podem sofrer, mesmo que pouco, a ação de intempéries, um pó pode ser dissipado e facilmente perdido. Seu dinheiro no banco é meramente uma entrada (ou conjunto de entradas) em um banco de dados centralizado que pode ser fraudado, editado ou tomado. Quando pensamos em poupança, a durabilidade é um fator fundamental.
 
 Criptomoedas dependem apenas da rede, que é distribuída (em grande parte dos casos), para existirem. Mesmo que você perca sua carteira original, é possível recuperá-la em outro dispositivo. Mesmo que alguém tente fraudar seu saldo na blockchain, será inútil porque todos os outros operadores da rede não irão confirmar a alteração. As únicas formas de você perder suas criptomoedas é perdendo sua chave privada, ou se a rede cair por um evento cósmico ou algo do tipo, mas nesse cenário perderíamos também nossas contas bancárias, dados de identidade, etc.
 
-Fungibilidade
+#### Fungibilidade
+
 Unir elementos de moeda é uma característica desejável de uma moeda. Barras de ouro, por exemplo, podem ser derretidas e então fundidas formando uma nova barra. Entretanto, essa tarefa não é tão simples e não faz parte do nosso dia a dia. Papel-moeda pode ser combinado com outras unidades disponíveis.
 
 As criptomoedas são 100% fungíveis. Se você tem 3 bitcoins e recebe 0,003 bitcoin, sua carteira agora terá 3,003 bitcoins.
