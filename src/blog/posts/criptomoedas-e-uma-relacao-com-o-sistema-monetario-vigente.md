@@ -7,13 +7,13 @@ image: ../images/criptomoedas-e-uma-relacao-com-o-sistema-monetario-vigente.jpg
 credits: Photo by <a href="https://unsplash.com/@jpvalery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener">Jp Valery</a> on <a href="https://unsplash.com/s/photos/block?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a>
 ---
 
-Estamos vivendo uma época de inovações tecnológicas e, ao mesmo tempo, uma época de crises que fazem a população sentir o impacto de algumas medidas políticas. Sou favorável ao questionamento e pensamento próprio para chegar a conclusões. Não gosto da ideia de “carteirada intelectual” e só seguir uma linha de pensamento porque fulano foi ministro falou, ou estudou em Harvard, ou é do meu partido favorito, ou fala o que agrada os meus sentimentos.
+Estamos vivendo uma época de inovações tecnológicas e, ao mesmo tempo, uma época de crises que fazem a população sentir o impacto de algumas medidas políticas. Sou favorável ao questionamento e pensamento próprio para chegar a conclusões. Não gosto da ideia de “carteirada intelectual” e só seguir uma linha de pensamento porque fulano que foi ministro falou, ou estudou em Harvard, ou é do meu partido favorito, ou fala o que agrada os meus sentimentos.
 
-Neste post eu irei dar uma ideia geral do conceito de moeda, suas características desejáveis, comparação com moedas fiduciárias (aquelas emitidas por um ente centralizador como o governo, no nosso caso) e apontar alguns dados sobre a realidade monetária.
+Neste **post** eu irei dar uma ideia geral do conceito de moeda, suas características desejáveis, comparação com moedas fiduciárias (aquelas emitidas por um ente centralizador como o governo, no nosso caso) e apontar alguns dados sobre a realidade monetária.
 
 Decidi escrever este texto em português porque acredito que, no Brasil, alguns temas relacionados à tecnologia e economia são deixados de lado ou tratados de maneira precipitada, criando polêmicas e polarizações onde a análise deveria ser, primeiramente, analítica e objetiva.
 
-Acredito muito na importância da consistência lógica, isto é, se você entende que 1+1 = 2, então deve entender que 2+2 = 4, ceteris paribus. É uma dedução lógica. O problema é que nem sempre isso acontece. Existem muitos exemplos, mas para esse post vamos focar na questão monetária.
+Acredito muito na importância da consistência lógica, isto é, se você entende que 1 + 1 = 2, então deve entender que 2 + 2 = 4, **ceteris paribus**. É uma dedução lógica. O problema é que nem sempre isso acontece. Existem muitos exemplos, mas para esse post vamos focar na questão monetária.
 
 Este texto poderia ser muito mais curto, com poucos parágrafos já seria possível expor minha ideia central. Entretanto, eu acredito que seria inútil tentar explicar qualquer conceito se a base da ideia não for mencionada, que é, em suma, o problema da centralização monetária e manipulação artificial de oferta.
 
@@ -43,7 +43,7 @@ Se você já fez uma mudança de residência em que você não tinha eletrodomé
 
 Imagine que um ente querido lhe presenteou com um colar banhado a ouro. Na sua posse, você provavelmente diria “este colar não tem preço”. Na de um terceiro, talvez vire uma noite de balada e combo. Consegue notar que são duas percepções de valor diferentes para o mesmo ativo? É basicamente por essa razão que o mundo é tão completo e interessante, porque as pessoas são atraídas por diferentes desejos, o que faz com que diferentes mercados possam surgir para suprir demandas específicas.
 
-Água é muito importante, sim, é essencial. Porém é menos escassa do que o ouro. Se eu estiver em um deserto tropical, provavelmente irei demandar mais água do que uma barra de ouro. Nesse cenário, eu trocaria facilmente uma barra de ouro por uma garrafa de água. Porém este é o caso extremo, como no exemplo dos eletrodomésticos, é uma situação atípica em que um bem acaba tendo um valor altíssimo para quem a demanda. Em uma grande cidade, não imagino um cenário em que isso ocorreria, visto que a oferta de água é relativamente alta.
+Água é muito importante, sim, é essencial. Porém é menos escassa do que o ouro. Se eu estiver em um deserto tropical, provavelmente irei demandar mais água do que uma barra de ouro. Nesse cenário, eu trocaria facilmente uma barra de ouro por uma garrafa de água. Porém este é o caso extremo, como no exemplo dos eletrodomésticos, é uma situação atípica em que um bem acaba tendo um valor altíssimo para quem o demanda. Em uma grande cidade, não imagino um cenário em que isso ocorreria, visto que a oferta de água é relativamente alta.
 
 Não vou entrar em detalhes sobre a relação oferta e demanda pois assumo que seja algo bem natural a todos, mas é importante que fique claro que essa relação não é uma imposição governamental, ou dos empresários, ou da nova ordem mundial. Nada disso. A relação se dá naturalmente conforme os ativos são mais ou menos procurados, e mais ou menos produzidos em uma determinada região ou população. O objetivo dessa relação é aumentar a produção quando o bem é mais demandado e reduzir caso contrário. Se um ativo A está sendo muito procurado, seu preço tenderá a subir (e sim, você pode pensar que é para maximizar o lucro de quem produz apesar de haver outros fatores envolvidos em toda a cadeia produtiva). Contudo, quando um preço começa a se elevar, outros produtores, muitas vezes de outros mercados, tendem a entrar no novo segmento lucrativo. Com isso, havendo mais oferta, os preços voltam à tendência de queda.
 
@@ -134,8 +134,10 @@ Ao imprimir moeda, existe uma sequência de vítimas dessa ação. As primeiras 
 
 Imagine que você tem a capacidade de fraudar o real com perfeição. Imprime 5 trilhões de reais mas guarda tudo dentro de um cofre. A economia não se dará conta dessa impressão. Imagine que você gaste 100 mil reais desse montante. Para o mercado não haverá uma mudança significativa. Agora despeje os 5 trilhões comprando carros, casas e empresas. Agora sim a informação começará a se propagar. Os primeiros recebedores poderão gastar sem tanto efeito, mas conforme o tempo passa, os preços começam a subir devido ao aumento da quantidade de dinheiro em circulação.
 
-Existem muitas formas de emissão de moeda, não necessariamente via impressora da casa da moeda. A expansão da base monetária pode ser feita via manipulação da taxa de juros, subsídios via bancos estatais, reserva fracionária ou impressão propriamente dita.  
-Taxa de juros
+Existem muitas formas de emissão de moeda, não necessariamente via impressora da casa da moeda. A expansão da base monetária pode ser feita via manipulação da taxa de juros, subsídios via bancos estatais, reserva fracionária ou impressão propriamente dita.
+
+### Taxa de juros
+
 A taxa de juros expressa o preço do dinheiro. Se a taxa de juros está alta, é porque ou a demanda por dinheiro está alta (como empréstimos), ou muita gente não está poupando (oferta baixa). Lembra que eu comentei sobre moeda ser um produto pois se comporta exatamente da mesma maneira que um? Pois é, moedas deveriam ter seu preço definido naturalmente na economia. Na verdade elas têm quando olhamos externamente. O real vs dólar tem um preço definido por mercado. Não é o governo brasileiro (geralmente) que diz quanto o dólar custa, é o mercado. Porém, dentro do país, quem define a taxa de juros é o governo.
 
 Vamos ao exemplo atual do Brasil. A inflação brasileira nos últimos 12 meses, segundo o [IBGE pelo IPCA](https://www.ibge.gov.br/explica/inflacao.php), passou de 10%, que é um acúmulo considerado alto.
@@ -147,7 +149,9 @@ Ao mesmo tempo, a meta da [taxa Selic](https://www.bcb.gov.br/controleinflacao/t
 A oferta de moeda tem efeito direto nos preços de mercado, e o governo mantém também uma taxa básica de juros. Existem duas variáveis que ficam sob controle governamental que as manipula da forma como bem entende. Existem muitas estratégias do ministério da economia, as quais variam dependendo do espectro político do governo e do que desejam fazer a curto, médio e longo prazo.
 
 Em suma, o governo pode colocar mais dinheiro em circulação e manipular artificialmente o valor da taxa de juros para incentivar o consumo, investimentos em títulos públicos e privados.
-Subsídios via bancos estatais
+
+### Subsídios via bancos estatais
+
 O BNDES é um banco nacional para fomento. A ideia original dele é estimular setores estratégicos da economia oferecendo empréstimos a juros reduzidos e subsidiados. Parece uma boa ideia com um nobre objetivo. Porém a realidade não é bem essa.
 
 O BNDES é um banco que estimula os setores que o governo acha estratégicos. [Muitas empresas de grande porte](https://www.bndes.gov.br/wps/portal/site/home/transparencia/consulta-operacoes-bndes/maiores-clientes), multinacionais, receberam e continuam recebendo verbas do BNDES e, muitas delas, ainda são devedoras.
