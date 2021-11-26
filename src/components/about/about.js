@@ -35,12 +35,6 @@ const About = () => {
           only how server will process something or the browser will handle
           events in the most performatic way.
         </p>
-        <p>
-          It’s common to our team to receive a demand and work on the whole
-          solution. Mapping the user story, plan the UI, model the database,
-          specify clients, endpoints and finally get our hands dirty in the
-          actual code.
-        </p>
       </section>
     </div>
   )
