@@ -109,12 +109,12 @@ As criptomoedas são 100% fungíveis. Se você tem 3 bitcoins e recebe 0,003 bit
 
 Comparando as propriedades mencionadas entre papel-moeda, metais preciosos e Bitcoin (para termos um exemplo mais concreto, estou utilizando o Bitcoin), temos o seguinte:
 
-| Propriedade    |       Papel-moeda        |         Metais         |         Bitcoin          |
-| -------------- | :----------------------: | :--------------------: | :----------------------: |
-| Escassez       | Controlada politicamente | Limitada pela natureza | Limitada matematicamente |
+|  Propriedade   |       Papel-moeda        |         Metais         |         Bitcoin          |
+| :------------: | :----------------------: | :--------------------: | :----------------------: |
+|    Escassez    | Controlada politicamente | Limitada pela natureza | Limitada matematicamente |
 | Portabilidade  |           Alta           |         Média          |         Perfeita         |
 | Divisibilidade |           Alta           |         Média          |         Perfeita         |
-| Durabilidade   |          Baixa           |          Alta          |         Perfeita         |
+|  Durabilidade  |          Baixa           |          Alta          |         Perfeita         |
 | Fungibilidade  |           Alta           |         Média          |         Perfeita         |
 
 <br/>

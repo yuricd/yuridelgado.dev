@@ -203,6 +203,10 @@
       text-align: left;
       padding: 12px 16px;
       border: 1px solid #ddd;
+
+      @include mobile-only {
+        font-size: 0.8rem;
+      }
     }
 
     tr:nth-child(even) {
