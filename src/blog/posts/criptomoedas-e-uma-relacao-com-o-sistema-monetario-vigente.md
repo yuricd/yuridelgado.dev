@@ -35,7 +35,7 @@ O valor de um ativo qualquer no mercado está sujeito a algumas variáveis, eu c
 
 A escassez no mercado é quanto que um determinado ativo está disponível. A demanda é o quanto que um ativo está sendo requisitado. E o valor subjetivo é o potencial que o ativo tem de agregar ao comprador ou recebedor de algum modo, seja financeira, sentimental ou de qualquer outra maneira.
 
-Se o ouro fosse tão escasso quanto a água, não seria tão valioso quanto é. “Ah, Yuri, então você está dizendo que a água não é valiosa? Quero ver você sobreviver sem água e com uma barra de ouro”. Não, não estou dizendo isso, e vou tentar mostrar que esse raciocínio não faz sentido. Vamos a alguns exemplos.
+Se o ouro fosse tão abundante quanto a água, não seria tão valioso quanto é. “Ah, Yuri, então você está dizendo que a água não é valiosa? Quero ver você sobreviver sem água e com uma barra de ouro”. Não, não estou dizendo isso, e vou tentar mostrar que esse raciocínio não faz sentido. Vamos a alguns exemplos.
 
 Imagino que você não tenha uma padaria ou não pretenda abrir uma. Sendo assim, quanto você estaria disposto a pagar por um forno de assar pães? Eu posso responder por mim que seria algo próximo a nada. Não trabalho na área e ter um forno me daria mais dor de cabeça do que prosperidade. Porém, existe um mercado em torno disso. Existe uma oferta de fornos, assim como uma demanda e um valor que um forno agrega para alguém que trabalha nesse segmento. “Ah, Yuri, mas isso é óbvio!”. Concordo, mas lembre-se da consistência de raciocínio que mencionei inicialmente.
 
