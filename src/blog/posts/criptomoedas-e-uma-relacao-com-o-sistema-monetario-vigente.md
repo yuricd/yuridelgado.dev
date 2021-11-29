@@ -9,11 +9,11 @@ credits: Photo by <a href="https://unsplash.com/@jpvalery?utm_source=unsplash&ut
 
 Estamos vivendo uma época de inovações tecnológicas e, ao mesmo tempo, uma época de crises que fazem a população sentir o impacto de algumas medidas políticas. Sou favorável ao questionamento e pensamento próprio para chegar a conclusões. Não gosto da ideia de “carteirada intelectual” e só seguir uma linha de pensamento porque fulano que foi ministro falou, ou estudou em Harvard, ou é do meu partido favorito, ou fala o que agrada os meus sentimentos.
 
-Neste **post** eu irei dar uma ideia geral do conceito de moeda, suas características desejáveis, comparação com moedas fiduciárias (aquelas emitidas por um ente centralizador como o governo, no nosso caso) e apontar alguns dados sobre a realidade monetária.
+Neste <i>post</i> eu irei dar uma ideia geral do conceito de moeda, suas características desejáveis, comparação com moedas fiduciárias (aquelas emitidas por um ente centralizador como o governo, no nosso caso) e apontar alguns dados sobre a realidade monetária.
 
 Decidi escrever este texto em português porque acredito que, no Brasil, alguns temas relacionados à tecnologia e economia são deixados de lado ou tratados de maneira precipitada, criando polêmicas e polarizações onde a análise deveria ser, primeiramente, analítica e objetiva.
 
-Acredito muito na importância da consistência lógica, isto é, se você entende que 1 + 1 = 2, então deve entender que 2 + 2 = 4, **ceteris paribus**. É uma dedução lógica. O problema é que nem sempre isso acontece. Existem muitos exemplos, mas para esse post vamos focar na questão monetária.
+Acredito muito na importância da consistência lógica, isto é, se você entende que 1 + 1 = 2, então deve entender que 2 + 2 = 4, <i>ceteris paribus</i>. É uma dedução lógica. O problema é que nem sempre isso acontece. Existem muitos exemplos, mas para esse post vamos focar na questão monetária.
 
 Este texto poderia ser muito mais curto, com poucos parágrafos já seria possível expor minha ideia central. Entretanto, eu acredito que seria inútil tentar explicar qualquer conceito se a base da ideia não for mencionada, que é, em suma, o problema da centralização monetária e manipulação artificial de oferta.
 
