@@ -67,7 +67,7 @@ The `config` object would be injected similarly as we did before.
 
 As I mentioned, although it’s a testable function, the downside of this approach is that your code depends on the feature flag definition and it’s polluted by if/else statements.
 
-Applying the Strategy pattern, we could pass the responsibility of the decision to the caller, and the function itself would be agnostic about what to do with the “general” list. We’ll still use the dependency injection concept, but the body of the function won’t need to verify anything, because the caller will make any change to us.
+Applying the Strategy pattern, we could pass the responsibility of the decision to the caller, and the function itself would be agnostic about what to do with the “general” list. We’ll still use the dependency injection concept, but the body of the function won’t need to verify anything, because the caller will make any change for us.
 
 <code-highlight language="javascript">
 // menu.js
