@@ -158,8 +158,10 @@ Cool, now it’s time to use the new structure in the factory:
 <code-highlight language="javascript">
 // featuresFactory.js
 const createFeaturesBasedOnFlags = (featureConditions) => {
+  const conditions = featureConditions()
+  
   function createMenu() {
-    if (featureConditions().useSpecialMenu()) {
+    if (conditions.useSpecialMenu()) {
       const createSpecialMenu = (menu) => [...menu, 'Manage Users']
       return generateMenu(createSpecialMenu)
     } else {
