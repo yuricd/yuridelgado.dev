@@ -71,17 +71,13 @@ Applying the Strategy pattern, we could pass the responsibility of the decision 
 
 <code-highlight language="javascript">
 // menu.js
-const createMenu = (addBehavior) => {
-  function generateMenu() {
-    const generalMenu = ['Main', 'Customers', 'Orders']
-    return addBehavior(generalMenu)
-  }
-  
-  return { generateMenu }
+const generateMenu = (addBehavior) => {
+  const generalMenu = ['Main', 'Customers', 'Orders']
+  return addBehavior(generalMenu)
 }
 </code-highlight>
 
-The function above receives a behavior function via parameter and applies it in its inner function `generateMenu`, which in turn defines the general menu items list and returns the behavior function receiving the list. It’s possible to change the general menu as you wish when calling the `createMenu` function. We can add, remove, or keep the original list as it is.
+The function above receives a behavior function via parameter and returns the behavior function receiving the default list. It’s possible to change the general menu as you wish when calling the `generateMenu` function. We can add, remove, or keep the original list as it is.
 
 <code-highlight language="javascript">
 // featuresFactory.js
@@ -89,9 +85,9 @@ const createFeaturesBasedOnFlags = (config) => {
   function createMenu() {
     if (config['useSpecialMenu']) {
       const createSpecialMenu = (menu) => [...menu, 'Manage Users']
-      return createMenu(createSpecialMenu)
+      return generateMenu(createSpecialMenu)
     } else {
-      return createMenu(x => x);
+      return generateMenu(x => x)
     }
   }
   // other features
@@ -101,6 +97,18 @@ const createFeaturesBasedOnFlags = (config) => {
 </code-highlight>
 
 Now, we added another layer of abstraction. Remember I said that if/else statements can make the code messy and coupled? Indeed we are still using the conditionals, but with one difference: this layer is responsible for abstracting all the feature flags, whereas the previous menu function has no idea about them. The original function that returns the “general” list is still there, and the factory is ready to inject a new behavior to the “general” menu, adding one more item to it. The `else` statement will pass an [identity function](https://en.wikipedia.org/wiki/Identity_function) to `createMenu`, which means that nothing will happen to the original menu.
+
+## Usage
+
+<code-highlight language="javascript">
+const factory = createFeaturesBasedOnFlags({'useSpecialMenu': true})
+const newMenu = factory.createMenu()
+console.log(newMenu) // ["Main", "Customers", "Orders", "Manage Users"]
+</code-highlight>
+
+If you define `useSpecialMenu` to `false`, "Manage Users" won't be displayed anymore.
+
+## Feature conditions definition
 
 It’d be also interesting to create a layer to define the features flags and their conditions. In all examples we used a simple JavaScript object with booleans, but in the real world it can be something more complex, like a database query, a list of items, or any other thing based on an internal or external definition. Firstly, we can create a “flag state manager”:
 
@@ -125,8 +133,16 @@ Now, let’s say we’ll only allow users with more than 10 clients to see the s
 <code-highlight language="javascript">
 // featureConditions.js
 const featureConditions = () => {
+  const config = {}
+  const myFeatures = feature(config)
+  
   function useSpecialMenu() {
-    return logedUser.clients.length > 10
+    if (logedUser.clients.length > 10) {
+      myFeatures.setFeature('useSpecialMenu', true)
+    } else {
+      myFeatures.setFeature('useSpecialMenu', false)
+    }
+    return myFeatures.isEnabled('useSpecialMenu')
   }
   
   return { useSpecialMenu }
@@ -135,23 +151,26 @@ const featureConditions = () => {
 
 Note: it’s called `useSpecialMenu` but it’s not a React hook!
 
+In this closure we can set the flag to either `true` or `false` and return the enabled status.
+
 Cool, now it’s time to use the new structure in the factory:
 
 <code-highlight language="javascript">
 // featuresFactory.js
 const createFeaturesBasedOnFlags = (featureConditions) => {
   function createMenu() {
-    if (featureConditions.useSpecialMenu()) {
+    if (featureConditions().useSpecialMenu()) {
       const createSpecialMenu = (menu) => [...menu, 'Manage Users']
-      return createMenu(createSpecialMenu)
+      return generateMenu(createSpecialMenu)
     } else {
-      return createMenu(x => x);
+      return generateMenu(x => x)
     }
   }
   // other features
   
   return { createMenu }
 }
+
 </code-highlight>
 
 Instead of calling directly the `config` object like before, we call the method responsible for telling us if the user is able to see the special menu.
