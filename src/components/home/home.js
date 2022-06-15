@@ -6,16 +6,11 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1>
-        I’m a full-stack dev focused on <br />
-        code quality and great <br />
+        I'm a data-driven full-stack engineer <br />
+        focused on code quality and great <br />
         user experiences. <br />
-        <br />
-        Currently building awesome <br />
-        things at{' '}
-        <a href="http://xnv.io" target="_blank" rel="noopener noreferrer">
-          XNV
-        </a>
-        .
+        <br />I led teams and helped to develop <br />
+        and deliver great solutions.
       </h1>
     </div>
   )

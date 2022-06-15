@@ -9,10 +9,7 @@ const About = () => {
 
       <section>
         <h3>Intro</h3>
-        <h4>
-          I’m a twenty-five-year-old developer from São Paulo currently working
-          as a full-stack engineer at XNV.
-        </h4>
+        <h4>I'm a twenty-six-year-old developer from São Paulo.</h4>
         <p>
           I have a special feeling for startups and I really enjoy the
           challenging environments they provide. The constant changes in
@@ -25,7 +22,7 @@ const About = () => {
       <section>
         <h3>What I do</h3>
         <h4>
-          From idea conception to server’s processing, I appreciate the whole
+          From idea conception to server's processing, I appreciate the whole
           path.
         </h4>
         <p>
