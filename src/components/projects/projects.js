@@ -9,6 +9,7 @@ import snake from '../../assets/images/snake.png'
 import gimpThumbs from '../../assets/images/gimp-thumbs.png'
 import carbonFootprint from '../../assets/images/carbon-footprint-calculator.png'
 import svgFilter from '../../assets/images/svg-filter-effects.png'
+import cardapio from '../../assets/images/cardapio.png'
 
 import styles from './projects.module.scss'
 
@@ -38,10 +39,10 @@ const Projects = () => {
         <div className={styles.left}>
           <div className={styles.item}>
             <Card
-              image={gimpThumbs}
-              title="BOT"
-              subtitle="Thumbnail Generator"
-              url="https://github.com/yuricd/gimp-scripting"
+              image={cardapio}
+              title="Web app"
+              subtitle="Create menus, analyze macros, and calculate your daily calorie intake"
+              url="https://cardapio.yuridelgado.dev"
             />
           </div>
 
@@ -83,6 +84,14 @@ const Projects = () => {
         </div>
 
         <div className={styles.right}>
+          <div className={styles.item}>
+            <Card
+              image={gimpThumbs}
+              title="BOT"
+              subtitle="Thumbnail Generator"
+              url="https://github.com/yuricd/gimp-scripting"
+            />
+          </div>
           <div className={styles.item}>
             <Card
               image={carbonFootprint}
