@@ -6,11 +6,12 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <h1>
-        I'm a data-driven full-stack engineer <br />
+        I'm a data-driven software engineer <br />
         focused on code quality and great <br />
         user experiences. <br />
-        <br />I led teams and helped to develop <br />
-        and deliver great solutions.
+        <br />
+        I've already led teams and helped <br />
+        to deliver great solutions.
       </h1>
     </div>
   )

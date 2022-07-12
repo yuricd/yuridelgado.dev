@@ -10,6 +10,7 @@ import gimpThumbs from '../../assets/images/gimp-thumbs.png'
 import carbonFootprint from '../../assets/images/carbon-footprint-calculator.png'
 import svgFilter from '../../assets/images/svg-filter-effects.png'
 import cardapio from '../../assets/images/cardapio.png'
+import opiny from '../../assets/images/opiny.png'
 
 import styles from './projects.module.scss'
 
@@ -37,6 +38,15 @@ const Projects = () => {
 
       <div className={styles.listProjects}>
         <div className={styles.left}>
+          <div className={styles.item}>
+            <Card
+              image={opiny}
+              title="Web app"
+              subtitle="Help commerces to receive feedback and access them in a dashboard"
+              url="https://opiny.com.br"
+            />
+          </div>
+
           <div className={styles.item}>
             <Card
               image={cardapio}
