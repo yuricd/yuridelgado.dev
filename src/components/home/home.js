@@ -11,7 +11,7 @@ const Home = () => {
         user experiences. <br />
         <br />
         I've already led teams and helped <br />
-        to deliver great solutions.
+        deliver great solutions.
       </h1>
     </div>
   )
