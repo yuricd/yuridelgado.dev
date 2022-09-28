@@ -40,15 +40,6 @@ const Projects = () => {
         <div className={styles.left}>
           <div className={styles.item}>
             <Card
-              image={opiny}
-              title="Web app"
-              subtitle="Help commerces to receive feedback and access them in a dashboard"
-              url="https://opiny.com.br"
-            />
-          </div>
-
-          <div className={styles.item}>
-            <Card
               image={cardapio}
               title="Web app"
               subtitle="Create menus, analyze macros, and calculate your daily calorie intake"
