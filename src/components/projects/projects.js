@@ -10,7 +10,6 @@ import gimpThumbs from '../../assets/images/gimp-thumbs.png'
 import carbonFootprint from '../../assets/images/carbon-footprint-calculator.png'
 import svgFilter from '../../assets/images/svg-filter-effects.png'
 import cardapio from '../../assets/images/cardapio.png'
-import opiny from '../../assets/images/opiny.png'
 
 import styles from './projects.module.scss'
 
