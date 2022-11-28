@@ -374,7 +374,7 @@ rec(11)
 
 When `num` decrements to `0`, it'll stop the recursion.
 
-For the sake of this post’s size I won’t detail why recursion works. A TL;DR could be: each call of your recursive function goes to a call stack and is popped when it returns. You can see a detailed explanation in this [freeCodeCamp article]([https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/](https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/)).
+For the sake of this post’s size I won’t detail why recursion works. A TL;DR could be: each call of your recursive function goes to a call stack and is popped when it returns. You can see a detailed explanation in this [freeCodeCamp article](https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/).
 
 Recursions are useful because you don’t need to mutate data when using them. Your function becomes stateless and deterministic.  
 
