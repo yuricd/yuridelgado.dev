@@ -297,17 +297,17 @@ Reduce is also the base of map and filter. Let’s quickly see how to implement 
 const arr = [1,2,3,4,5,6]
  
 const myMap = (arr, callback) => {
-  return arr.reduce((agg, curr) => {
-    return [...agg, callback(curr)]
+  return arr.reduce((acc, curr) => {
+    return [...acc, callback(curr)]
   }, [])
 }
  
 const myFilter = (arr, callback) => {
-  return arr.reduce((agg, curr) => {
+  return arr.reduce((acc, curr) => {
     if (callback(curr)) {
-      return [...agg, curr]
+      return [...acc, curr]
     }
-    return agg
+    return acc
   }, [])
 }
  
