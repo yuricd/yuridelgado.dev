@@ -20,7 +20,7 @@ The biggest difference is that FP has a restricted set of rules you need to foll
 
 Among the most known functional languages we have Haskell, Elixir, Lisp, Clojure, and Erlang. I’ll explain some FP principles, but it’s worth noting that many of those languages are not 100% functional. Sticking to the constraints I mentioned before can make the developer’s life simpler, but also harder, decreasing their productivity. Then, some languages started absorbing some imperative/OOP features to be a little more flexible, without giving up their main concepts. Also, I’d say it’s almost impossible to be 100% pure functional because eventually you’ll have to perform some interface with impure languages like C or C++. 
 
-In this post I’ll not cover how to write functional code in other languages than JavaScript, mainly because I don’t have enough experience with many of them. But here it’s a naive implementation of the Fibonacci sequence in a few of them.
+In this post I’ll not cover how to write functional code in languages other than JavaScript, mainly because I don’t have enough experience with most of them. But here it’s a naive implementation of the Fibonacci sequence in a few of them.
 
 
 Haskell:
@@ -93,7 +93,7 @@ const foo = function(callback, ...args) {
 ## Concepts
 
 ### Pure functions
-Pure functions return always the same output from the given input. It means that they are deterministic. You won’t have surprises when running a pure function over and over again. It might sound obvious, but a classic example of a non-pure function is a function that returns the current date.
+Pure functions always return the same output from the given input. It means that they are deterministic. You won’t have surprises when running a pure function over and over again. It might sound obvious, but a classic example of a non-pure function is a function that returns the current date.
 
 <code-highlight language="javascript">
 const getCurrentDate = () => new Date()
@@ -225,11 +225,11 @@ This code works and there’s nothing wrong with it. But if we want to follow FP
 
 A good way to handle arrays in JavaScript is by using map, filter and reduce, which are methods from `Array.prototype`.
 
-**map:** applies a function on which element of the array and return a new array with the results. The output array has exactly the same length as the input. 
+**map:** applies a function on each element of the array and return a new array with the results. The output array has exactly the same length as the input. 
 
-**filter:** applies a function on which element of the array and returns a new array only with the elements that returned truthy to the function application. The output has a length less or equal than the input’s length.
+**filter:** applies a function on each element of the array and returns a new array only with the elements that returned truthy to the function application. The output has a length less or equal than the input’s length.
 
-**reduce:** applies a reducer function in which element of the array and uses an accumulator that is returned on each call of the reducer. This one is slightly more confusing, so let’s see an example and some comparisons.
+**reduce:** applies a reducer function in each element of the array and uses an accumulator that is returned on each call of the reducer. This one is slightly more confusing, so let’s see an example and some comparisons.
 
 Say we want to double each element of an array:
 
