@@ -16,11 +16,14 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: 'UA-144749076-4',
-        head: true,
-        anonymize: true,
+        trackingIds: [
+          'G-58FEN886PE', // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     `gatsby-plugin-sass`,
