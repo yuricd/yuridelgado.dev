@@ -275,14 +275,14 @@ Let’s separate the even numbers into an array and the odds into another array.
 <code-highlight language="javascript">
 const arr = [1,2,3,4,5,6]
  
-const sum = arr.reduce(([even, odd], curr) => {
+const splitNumbers = arr.reduce(([even, odd], curr) => {
   if (curr % 2 === 0) {
     return [[...even, curr], odd]
   }
   return [even, [...odd, curr]]
 }, [[], []])
  
-console.log(sum) // [[2,4,6], [1,3,5]]
+console.log(splitNumbers) // [[2,4,6], [1,3,5]]
 console.log(arr) // [1, 2, 3, 4, 5, 6]
 </code-highlight>
 
@@ -372,7 +372,7 @@ function rec(num) {
 rec(11)
 </code-highlight>
 
-When `num` decrements to `0`, it'll stop the recursion.
+When `num` decrements to `-1`, it'll stop the recursion.
 
 For the sake of this post’s size I won’t detail why recursion works. A TL;DR could be: each call of your recursive function goes to a call stack and is popped when it returns. You can see a detailed explanation in this [freeCodeCamp article](https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/).
 
