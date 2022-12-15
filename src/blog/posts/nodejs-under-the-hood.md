@@ -27,12 +27,12 @@ In this post, I’ll focus on V8 and libuv.
 
 
 ## V8 engine
-Google Chrome used to have a better performance when compared to other browsers interpreting JavaScript thanks to V8. This engine compiles JavaScript at run time by implementing a specific type of compiler called [JIT (Just in Time)]([https://en.wikipedia.org/wiki/Just-in-time_compilation](https://en.wikipedia.org/wiki/Just-in-time_compilation)) compiler. JIT compilation happens during the execution of the code, and not before it, as commonly happens in C or C++. By using JIT compilation, it’s possible to optimize and de-optimize the compilation according to the targeted CPU and OS aiming for the better performance possible.
+Google Chrome used to have a better performance when compared to other browsers interpreting JavaScript thanks to V8. This engine compiles JavaScript at run time by implementing a specific type of compiler called [JIT (Just in Time)](https://en.wikipedia.org/wiki/Just-in-time_compilation) compiler. JIT compilation happens during the execution of the code, and not before it, as commonly happens in C or C++. By using JIT compilation, it’s possible to optimize and de-optimize the compilation according to the targeted CPU and OS aiming for the better performance possible.
 
-V8 is part of the Node.js system but it’s also in the Chromium implementation, residing in Google Chrome, Opera, Brave, [Electron]([https://www.electronjs.org/](https://www.electronjs.org/)), etc.
+V8 is part of the Node.js system but it’s also in the Chromium implementation, residing in Google Chrome, Opera, Brave, [Electron](https://www.electronjs.org/), etc.
 
 ### Tokens, parsers, and AST
-The first step of V8’s flow is to generate tokens and send them to the parser, which creates nodes based on the syntax rules. Some examples of nodes are function and variable declarations, return statements, etc. Those nodes now can be assembled into a tree structure called AST ([abstract syntax tree]([https://en.wikipedia.org/wiki/Abstract_syntax_tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree))).
+The first step of V8’s flow is to generate tokens and send them to the parser, which creates nodes based on the syntax rules. Some examples of nodes are function and variable declarations, return statements, etc. Those nodes now can be assembled into a tree structure called AST ([abstract syntax tree](https://en.wikipedia.org/wiki/Abstract_syntax_tree)).
 
 ### Ignition interpreter and the bytecodes
 With the AST ready, it’s time to send it down to the Ignition interpreter that generates the bytecode of your script.
@@ -243,7 +243,7 @@ The timer now is set for 0ms, and not 1000ms. Can we say that the order of logs 
 
 There’s a tricky thing about the event loop: there’s an order to execute callbacks. Some calls take precedence over others.
 
-In the described steps, I used one call stack and one callback queue, but actually, there are many callback queues, one for each phase of the event loop  . Let’s see the phases according to [Node.js docs]([https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#phases-overview](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#phases-overview)):
+In the described steps, I used one call stack and one callback queue, but actually, there are many callback queues, one for each phase of the event loop  . Let’s see the phases according to [Node.js docs](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#phases-overview):
 
 1. **timers**: this phase executes callbacks scheduled by `setTimeout()` and ``setInterval()``.
 2. **pending callbacks**: executes I/O callbacks deferred to the next loop iteration.
@@ -303,12 +303,12 @@ setImmediate(() => {
 
 But even here, the order of the output depends on the performance of the process, it’s non-deterministic.
 
-When it comes to this race within an I/O cycle, [`setImmediate` callback is always executed first]([https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#setimmediate-vs-settimeout](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#setimmediate-vs-settimeout)). Thus, `5` and `6` are printed.
+When it comes to this race within an I/O cycle, [`setImmediate` callback is always executed first](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#setimmediate-vs-settimeout). Thus, `5` and `6` are printed.
 
 ## Final words
 V8 and libuv are not the simplest things on Earth, indeed, but they are very interesting and a game changer when it comes to both front and back-end development. 
 
-Unfortunately, I couldn’t cover many features and details of Node.js in this post, but I highly recommend you to take a look at the [official docs]([https://nodejs.org/en/docs](https://nodejs.org/en/docs)) and the amazing series of posts from [Lucas Santos on dev.to]([https://dev.to/_staticvoid/node-js-under-the-hood-1-getting-to-know-our-tools-1465](https://dev.to/_staticvoid/node-js-under-the-hood-1-getting-to-know-our-tools-1465)).
+Unfortunately, I couldn’t cover many features and details of Node.js in this post, but I highly recommend you to take a look at the [official docs](https://nodejs.org/en/docs) and the amazing series of posts from [Lucas Santos on dev.to](https://dev.to/_staticvoid/node-js-under-the-hood-1-getting-to-know-our-tools-1465).
 
 Thank you for reading and I hope you could learn a little from this post.
 
