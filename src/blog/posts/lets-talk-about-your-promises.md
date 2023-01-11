@@ -3,8 +3,9 @@ title: Let's talk about your Promises
 author: Yuri
 date: 2023-01-04
 category: Development
-image: ../images/v8-engine.jpg
-credits: Photo by <a href="https://unsplash.com/@lee2d2?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">lee attwood</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+image: ../images/lets-talk-about-your-promises.jpg
+credits: Photo by <a href="https://unsplash.com/@womanizer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Womanizer Toys</a> on <a href="https://unsplash.com/photos/8oB43mw658c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+  
 ---
 JavaScript is a programming language that allows developers to create websites, mobile apps, desktop applications, browser extensions, back-end applications, and much more. All of these are possible thanks to the V8 engine and APIs, such as Web API or libuv. If you want to know more about V8 and libuv, take a look at my post [Node.js under the hood](https://yuridelgado.dev/blog/nodejs-under-the-hood/)!
 
