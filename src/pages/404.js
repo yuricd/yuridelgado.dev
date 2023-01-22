@@ -19,10 +19,10 @@ const Error404 = () => {
         width: '80%',
         height: '100vh',
         textAlign: 'center',
-        margin: '0 auto'
+        margin: '0 auto',
       }}
     >
-      <h1>Ooops... The page you're trying to reach seems to be vanished.</h1>
+      <h1>Ooops... The page you're trying to reach seems to have vanished.</h1>
       <h2>
         Maybe you want to see more about me <a href="/">here</a> ou check my
         blog posts <a href="/blog">here</a>.
