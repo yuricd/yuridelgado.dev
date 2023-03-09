@@ -40,7 +40,7 @@ Fortunately, there are several websites that aggregate properties in the US, Eur
 
 ![Top 10 most visited real estate websites in US](../images/real-estate-websites.jpg) <sup>Figure 1. Top 10 most visited real estate websites in US.</sup>
 
-Zillow seems to be a good source of data. Since my goal is not to get data from a hundred different cities across the whole country, a simple scraper can handle that.
+Zillow seemed to be a good source of data. Since my goal was not to get data from a hundred different cities across the whole country, a simple scraper could handle that.
 I wanted to compare cities in different situations in terms of tourism, property availability, income, etc. So the cities that came to my mind were Orlando, FL, and Stamford, CT (I don’t know why, it just popped into my mind, and it was a good candidate, indeed).
 
 ### 1. Getting the data
@@ -49,7 +49,7 @@ To scrape Zillow I only had to understand how the requests were made to the serv
 With the script ready, I put that in two Airflow’s DAGs, one for Orlando and another one for Stamford. Both were supposed to run once a day, from 01/13/2023 to 01/18/2023.
 
 ### 2. Saving in the data lake
-The endpoint response is in JSON format, then I convert it to CSV and send it to Google Could Storage, in a previously created bucket. Each file was identified with the current date.
+The endpoint response is in JSON format, then I converted it to CSV and sent it to Google Could Storage, in a previously created bucket. Each file was identified with the current date.
 
 ### 3. Reading with BigQuery
 The hardest part was turning the raw data into meaningful information. I had to come up with different ideas of useful data for comparison.
@@ -81,7 +81,7 @@ Scraped properties in Stamford: 1,185
 Scraped properties in Orlando: 6,400 
 
 ## What to do next
-This was a project for studying purposes, but let’s say I’d maintain this project running. Here it’s a list of improvements I’d do:
+This was a project for studying purposes, but let’s say I’d maintain this project running. Here is a list of improvements I’d do:
 
 1. Run for a few months to understand the average time to sell a property
 2. Aggregate data from other cities and countries
