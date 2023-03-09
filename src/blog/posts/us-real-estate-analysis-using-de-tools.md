@@ -12,7 +12,7 @@ I created a cool data visualization using real estate data from Orlando, FL, and
 
 ---
 
-In the last quarter, I was challenged in [Loka](https://loka.com)’s Data-Engineering bootcamp. I had never studied in minimal depth DE topics, but the challenge caught my eye and I ended up practicing a lot of tools and understanding better how to build ETLs.
+In the last quarter, I was challenged in [Loka](https://loka.com)’s Data-Engineering bootcamp hosted by [Henrique Silva](https://pt.linkedin.com/in/henrique-ribeiro-silva). I had never studied in minimal depth DE topics, but the challenge caught my eye and I ended up practicing a lot of tools and understanding better how to build ETLs.
 
 The syllabus was the following:
 
