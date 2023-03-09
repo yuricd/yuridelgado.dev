@@ -34,7 +34,7 @@
     "gatsby-remark-prismjs": "^4.0.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-rehype": "^2.0.0",
-    "gatsby-transformer-remark": "^2.16.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.12.0",
     "gsap": "^3.6.0",
     "jest": "^26.6.3",
